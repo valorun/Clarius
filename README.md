@@ -1,4 +1,4 @@
-## Clarius
+# **Clarius**
 Interface de controle du projet de robotique Clarius. Il s'agit d'une interface graphique réalisée en Java permettant d'établir des connexions SSH avec les raspberries afin de leur faire executer des commandes.
 
 # Pré-requis
