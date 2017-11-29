@@ -1,16 +1,16 @@
 ## Clarius
 Interface de controle du projet de robotique Clarius. Il s'agit d'une interface graphique réalisée en Java permettant d'établir des connexions SSH avec les raspberries afin de leur faire executer des commandes.
 
-## Pré-requis
+# Pré-requis
 - Java 7
 - Installation de raspian sur raspberries
 - Autorisation de connexion SSH sur les raspberries
 - (optionnel)Installation du serveur de reconnaissance vocal "Yana" sur le raspberry destiné aux mouvements du corps(https://github.com/ldleman/yana4all-binaires)
 - Python sur le raspberry destiné aux déplacements du chariot
 
-## Installation
+# Installation
 Téléchargez et décompressez l'archive de Clarius. Le programme principal et son executable sont à la racine. Les scripts des raspberries sont dans le dossier "Scripts".
-# Script des raspberries
+## Script des raspberries
 Chaque raspberry a un dossier correspondant à son nom dans le dossier "Scripts":
 - Raspberry buste/vocal
     - Le script "initialize_pins.sh" permet d'initialiser les gpios du raspberry.
@@ -28,5 +28,5 @@ au lieu d'éxecuter le script manuellement à chaque fois, nous allons faire en 
     - Copiez le dossier "Scripts" vers "/home/pi/". Il contient les scripts permettant de controler les mouvements de la carte de puissance du chariot.
 
 
-# Programme principal
+## Programme principal
 Le programme étant Executez le fichier "exec.bat" pour executer le programme. Vous pouvez changer les identifiants de connexion, ainsi que les ip des raspberries, ou encore le numéro des pins associé à chaque mouvement dans le fichier "config.txt" (nécessite redémarrage du programme après modifications).
