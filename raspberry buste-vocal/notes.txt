@@ -1,0 +1,10 @@
+le script initialize_pins.sh permet d'initialiser les gpios du raspberry.
+pour le rendre executable, on utilise la commande: chmod +x initialize_pins.sh
+au lieu d'éxecuter le script manuellement à chasue fois, nous allons faire en sorte qu'il s'éxecute automatiquement au démarage du raspberry.
+pour se faire, on copie le script vers le répertoire /etc/init.d
+on ajoute ensuite le script à la séquence de boot (2 méthodes): 
+- lancer la commande "sudo update-rc.d initialize_pins.sh defaults"
+- ajouter la ligne "/etc/init.d/initialize_pins.sh || exit 1" au fichier /etc/rc.local, avant le "exit 0"
+
+
+
