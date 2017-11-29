@@ -1,0 +1,1 @@
+..\..\..\..\OpenJDK\bin\java.exe -cp lib\*;bin vue.Application
