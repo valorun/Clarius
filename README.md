@@ -25,7 +25,7 @@ au lieu d'éxecuter le script manuellement à chaque fois, nous allons faire en 
     - Copiez les fichiers "sshd_config" et "sudoers" au même endroit que pour le raspberry précédent
 - Raspberry vehicule
     - Copiez les fichiers "sshd_config" et "sudoers" au même endroit que pour le raspberry précédent
-    - Copiez le dossier "Scripts" vers "/home/pi/". Il contient les scripts permettant de controler les mouvements de la carte de puissance du chariot.
+    - Copiez le dossier "Scripts" vers "/home/pi". Il contient les scripts permettant de controler les mouvements de la carte de puissance du chariot.
 
 
 ## Programme principal
