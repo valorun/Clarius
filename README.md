@@ -5,7 +5,8 @@ Interface de controle du projet de robotique Clarius. Il s'agit d'une interface 
 - Java 7
 - Installation de raspian sur raspberries
 - Autorisation de connexion SSH sur les raspberries
-- (optionnel)Installation du serveur de reconnaissance vocal "Yana" sur un des raspberries (https://github.com/ldleman/yana4all-binaires)
+- (optionnel)Installation du serveur de reconnaissance vocal "Yana" sur le raspberry destiné aux mouvements du corps(https://github.com/ldleman/yana4all-binaires)
+- Python sur le raspberry destiné aux déplacements du chariot
 
 ## Installation
 Téléchargez et décompressez l'archive de Clarius. Le programme principal et son executable sont à la racine. Les scripts des raspberries sont dans le dossier "Scripts".
@@ -20,6 +21,11 @@ au lieu d'éxecuter le script manuellement à chaque fois, nous allons faire en 
     - Copiez fichier "sshd_config" vers dans "/etc/ssh/" et remplacer celui existant. Ce fichier a été modifier pour accepter plusieurs algorithmes d'échanges de clés (nécessaire pour se connecter avec le programme).
     - (optionnel, si Yana est installé)Copiez le fichier "sudoers" vers dans "/etc". Les lignes ajoutées dans ce fichier vont permettre de donner le droit d'éxecuter les autres scripts au programme "Yana" (https://github.com/ldleman/yana4all-binaires).
     - Copiez le dossier "Scripts" vers le répertoire personnel (dans notre cas "/home/pi"). Il s'agit de tout les scripts permettant de controller les relais de chaques moteurs.
+- Raspberry camera
+    - Copiez les fichiers "sshd_config" et "sudoers" au même endroit que pour le raspberry précédent
+- Raspberry vehicule
+    - Copiez les fichiers "sshd_config" et "sudoers" au même endroit que pour le raspberry précédent
+    - Copiez le dossier "Scripts" vers "/home/pi/". Il contient les scripts permettant de controler les mouvements de la carte de puissance du chariot.
 
 
 # Programme principal
