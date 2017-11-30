@@ -2,12 +2,17 @@
 #/home/pi/Scripts/enable_relay.bash
 SCRIPTS_LOCATION="/home/pi/Scripts"
 CONFIG_FILE="$SCRIPTS_LOCATION/config.txt"
+
+# Fonction permettant de récupérer dans le fichier de config, le pin associé au nom d'un nom de relai donné en argument.
 function getPin {
         grep -w "${1}.pin" $CONFIG_FILE | cut -d "=" -f 2
 }
+
+# Fonction permettant de récupérer le nom de la parité auquel appartient un relai donné en argument relai.
 function getParity {
         echo "$1" | cut -d "-" -f 1
 }
+# Fonction permettant de récupérer le pin du relai pair au relai donné en aragument. Par exemple, si on donne un relai qui active un moteur tournant dans un sens, la fonction retourne le pin du relai faisant tourner le moteu dans l'autre sens.
 function getPairPin {
         #On récupère le pin du relai paire du relai donné en argument
         #Pour cela on récupère les deux pins avec la même parité dans le fichier de config. 
@@ -22,7 +27,7 @@ function getPairPin {
             echo $pairPin
         fi
 }
-
+# Fonction permettant de savoir si le relai a le droit d'être activé. On verifie ici que le relai appairé n'est pas déja activé (afin d'éviter de faire fonctionner un moteur dans deux sens à la fois).
 function canBeEnabled {
         pairPin=$(getPairPin $1)
 		value=$2
@@ -48,6 +53,7 @@ function canBeEnabled {
             echo "true"
         fi
 }
+# Fonction principale permettant d'ordonner l'allumage d'un relai donné en argument
 function changeRelayState {
         pin="$(getPin $1)"
         value=$2
