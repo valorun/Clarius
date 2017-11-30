@@ -5,7 +5,7 @@ import java.util.ArrayList;
 /**
 * Classe permettant d'instancier une séquence de pins a activer et désactiver successivement.
 * @author Ronan COLLIER
-*@version 1.0
+* @version 1.0
 */
 public class Sequence{
 
@@ -13,8 +13,8 @@ public class Sequence{
 	private int timeTotal;
 
 	/**
-     * Constructeur de la classe Sequence.
-     */
+     	* Constructeur de la classe Sequence.
+     	*/
 	public Sequence() {
 		relays = new ArrayList<String>();
 		timeTotal=0;

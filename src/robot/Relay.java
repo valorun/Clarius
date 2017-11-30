@@ -88,7 +88,7 @@ public class Relay{
 		return name;
 	}
 	/**
-	 * Méthode permettant le nom du relai.
+	 * Méthode permettant d'obtenir les informations du relai sous forme de String.
 	 * @return le nom du relai.
 	 */
 	public String toString(){
