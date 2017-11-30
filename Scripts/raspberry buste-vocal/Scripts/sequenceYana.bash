@@ -1,12 +1,11 @@
 #!/bin/bash
 #/home/pi/Scripts/sequenceYana.bash
-SCRIPTS_DIR="/home/pi/Scripts"
-CONFIG_FILE="${SCRIPTS_DIR}/config.txt"
+CONFIG_FILE="config.txt"
 # Script permettant à Yana d'éxecuter une sequence avec une temporisation préalablement fixée dans le fichier de config.
 
 # Fonction permettant d'obtenir la temporisation associée au relai donné en argument.
 function getTemp {
-        tempo="$(grep -w "${1}.tempo" $CONFIG_FILE | cut -d "=" -f 2)"
+        tempo="$(grep -w "${1}.tempo" "$(dirname $0)/$CONFIG_FILE" | cut -d "=" -f 2)"
         if [ $(echo $tempo | wc -l) -ne 0 ] ; then # on vérifie si une temporisation existe
             echo "scale=3;$tempo / 1000" | bc -l
         else
@@ -15,7 +14,7 @@ function getTemp {
 }
 if [ $(getTemp $1) != "none" ] ; then
 	#echo "$1 $(getTemp $1)"
-    	${SCRIPTS_DIR}/sequence.bash "$1" "$(getTemp $1)"
+    	$(dirname $0)/sequence.bash "$1" "$(getTemp $1)"
 else
     echo "le relai n'a pas de temporisation associée"
 fi
