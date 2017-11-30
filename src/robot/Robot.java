@@ -10,7 +10,7 @@ import java.util.concurrent.TimeUnit;
 /**
 * Classe permettant d'instancier l'abstraction du robot. Cette lasse fournit les méthodes pour obtenir chaques parties du robot, mais aussi lié chaques relais à un pin.
 * @author Ronan COLLIER
-*@version 1.0
+* @version 1.0
 */
 public class Robot{
 	
@@ -30,14 +30,17 @@ public class Robot{
 	Relay onOffCartes;
 
 	/**
-     * Constructeur de la classe Robot.
-     * @param relaysMap représente la liste des pins du raspberry avec le nom du relais associés.
-     */
+     	* Constructeur de la classe Robot.
+     	* @param relaysMap représente la liste des pins du raspberry avec le nom du relais associés.
+     	*/
 	public Robot(HashMap<String, Relay> relaysMap){
 		robotOn=false;
 		this.relaysMap=relaysMap;
 		createParts();
 	}
+	/**
+	 * Méthode permettant d'instancier chaques parties du robot à partir de la hashmap
+	 */
 	private void createParts() {
 		eclairage=relaysMap.get("eclairage");
 		lumiereYeux=relaysMap.get("lumiereYeux");
