@@ -1,6 +1,6 @@
 #!/bin/bash
 #/home/pi/Scripts/enable_relay.bash
-SCRIPTS_LOCATION="/home/pi/Scripts"
+SCRIPTS_LOCATION="~/Scripts"
 CONFIG_FILE="$SCRIPTS_LOCATION/config.txt"
 
 # Fonction permettant de récupérer dans le fichier de config, le pin associé au nom d'un nom de relai donné en argument.

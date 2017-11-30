@@ -1,4 +1,4 @@
-#Sat Nov 18 15:43:21 CET 2017
+#Wed Nov 29 21:17:52 CET 2017
 tete-droite.pin=18
 ip_corps=192.168.1.16
 cameraHori-droite.pin=24
