@@ -14,7 +14,7 @@ import com.jcraft.jsch.Session;
 * Classe permettant d'instancier l'abstraction d'un raspberry. Cette classe fournit les méthodes nécessaires pour gérer une liaison SSH avec le raspberry instancié.
 *
 * @author Ronan COLLIER
-*@version 1.0
+* @version 1.0
 */
 
 public class Raspberry{
@@ -91,6 +91,7 @@ public class Raspberry{
 	}
 	/**
 	 * Méthode permettant d'envoyer une commande sur le raspberry.
+	 * @param command la commande à éxécuter sur le raspberry
 	 */
 	public void sendCommand(String command){
 		try {
@@ -112,11 +113,18 @@ public class Raspberry{
 		}
 		catch(Exception e) {}
 	}
-	
+	/**
+	 * Méthode permettant de savoir si le raspberry est connecté sur le réseau.
+	 * @return True si le raspberry est pingable, False sinon.
+	 */
 	public boolean isReachable() throws UnknownHostException, IOException {
 		return InetAddress.getByName(ip).isReachable(3000);
 
 	}
+	/**
+	 * Méthode retournant l'IP du raspberry.
+	 * @return l'IP du raspberry.
+	 */
 	public String getIp() {
 		return ip;
 	}
