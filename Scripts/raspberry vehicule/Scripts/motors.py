@@ -1,4 +1,9 @@
 #/home/pi/Scripts/motors.py
+# Script permettant de faire fonctionner les moteurs du chariot à l'aide de la carte Sabertooth 2x32. On passe en argument la vitesse du premier moteur puis celle du second moteur (une valeur entre 0 et 2047)
+# Le montage pour controller la est le suivant:
+#-relier le S1 sur le TX du raspberry (envoie)
+#-relier le S2 sur le RX du raspberry (reception)
+#-relier le 0V sur un GND du raspberry
 import wiringpi, sys
 m1Speed = sys.argv[1]
 m2Speed = sys.argv[2]
