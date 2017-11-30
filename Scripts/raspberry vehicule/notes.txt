@@ -1,7 +1,0 @@
-pour controler la carte sabertooth 2x32:
--relier le S1 sur le TX du raspberry (envoie)
--relier le S2 sur le RX du raspberry (reception)
--relier le 0V sur un GND du raspberry
-
-
-
