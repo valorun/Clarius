@@ -57,23 +57,23 @@ def ChangeBit(Input):
 		sys.exit()
 
 	if Port == "1":
-        Previous = '{:08b}'.format(readSPI(Addr, 0x0A))[8-int(Pin)]
-        if Previous == Input_state:
-            sys.exit()
-        Bin = bin(int('{:08}'.format(readSPI(Addr, 0x0A))) ^ int(Out, 2))
-        sendSPI( Addr, 0x0A, int(Bin, 2) )
-        sys.exit()
-    if Port == "2":
-        Previous = '{:08b}'.format(readSPI(Addr, 0x1A))[8-int(Pin)]
-        if Previous == Input_state:
-            sys.exit()
-        Bin = bin(int('{:08}'.format(readSPI(Addr, 0x1A))) ^ int(Out, 2))
-        sendSPI( Addr, 0x1A, int(Bin, 2) )
-        sys.exit()
+        	Previous = '{:08b}'.format(readSPI(Addr, 0x0A))[8-int(Pin)] # lecture de la valeur actuelle du pin. on lit la valeur sous forme d'octet et on récupère seulement le bit associé au pin désiré
+        	if Previous == Input_state:
+            		sys.exit()
+        	Bin = bin(int('{:08}'.format(readSPI(Addr, 0x0A))) ^ int(Out, 2)) # "XOR" entre la valeur actuelle des pins et la nouvelle valeur
+        	sendSPI( Addr, 0x0A, int(Bin, 2) )
+        	sys.exit()
+    	if Port == "2":
+        	Previous = '{:08b}'.format(readSPI(Addr, 0x1A))[8-int(Pin)]
+        	if Previous == Input_state:
+            		sys.exit()
+        	Bin = bin(int('{:08}'.format(readSPI(Addr, 0x1A))) ^ int(Out, 2))
+        	sendSPI( Addr, 0x1A, int(Bin, 2) )
+        	sys.exit()
 
 
 
-
+# Méthode permettant d'envoyer des données sur les pins du raspberry
 def sendValue(value):
     for i in range(8):
         if (value & 0x80):
@@ -83,14 +83,20 @@ def sendValue(value):
         GPIO.output(SCLK, GPIO.HIGH)
         GPIO.output(SCLK, GPIO.LOW)
         value <<= 1
-
+# Méthode permettant d'envoyer des sur le shield via les pins SPI
+# opcode = code du banc désiré
+# addr = code de la ligne sur le banc
+# date = valeur a envoyer
 def sendSPI(opcode, addr, data):
     GPIO.output(CS, GPIO.LOW)
     sendValue(opcode|SPI_SLAVE_WRITE)
     sendValue(addr)
     sendValue(data)
     GPIO.output(CS, GPIO.HIGH)
-    
+# Méthode permettant de lire la valeur d'une ligne d'un banc sur le shield via les pins SPI
+# opcode = code du banc désiré
+# addr = code de la ligne sur le banc   
+# retourne la valeur binaire
 def readSPI(opcode, addr):
     GPIO.output(CS, GPIO.LOW)
     sendValue(opcode|SPI_SLAVE_READ)
