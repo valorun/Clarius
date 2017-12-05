@@ -30,4 +30,4 @@ au lieu d'éxecuter le script manuellement à chaque fois, nous allons faire en 
 
 
 ## Programme principal
-Le programme étant Executez le fichier "exec.bat" pour executer le programme. Vous pouvez changer les identifiants de connexion, ainsi que les ip des raspberries, ou encore le numéro des pins associé à chaque mouvement dans le fichier "config.txt" (nécessite redémarrage du programme après modifications).
+Le programme étant situé à la racine de l'archive, executez le fichier "exec.bat" pour le démarer. Vous pouvez changer les identifiants de connexion, ainsi que les ip des raspberries, ou encore le numéro des pins associé à chaque mouvement dans le fichier "config.txt" (nécessite redémarrage du programme après modifications).
