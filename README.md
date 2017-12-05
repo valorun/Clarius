@@ -22,10 +22,11 @@ au lieu d'éxecuter le script manuellement à chaque fois, nous allons faire en 
     - (optionnel, si Yana est installé)Copiez le fichier "sudoers" vers dans "/etc". Les lignes ajoutées dans ce fichier vont permettre de donner le droit d'éxecuter les autres scripts au programme "Yana" (https://github.com/ldleman/yana4all-binaires).
     - Copiez le dossier "Scripts" vers le répertoire personnel (dans notre cas "/home/pi"). Il s'agit de tout les scripts permettant de controller les relais de chaques moteurs.
 - Raspberry camera
-    - Copiez les fichiers "sshd_config" et "sudoers" au même endroit que pour le raspberry précédent
+    - Copiez les fichiers "sshd_config" et "sudoers" au même endroit que pour le raspberry précédent.
 - Raspberry vehicule
-    - Copiez les fichiers "sshd_config" et "sudoers" au même endroit que pour le raspberry précédent
+    - Copiez les fichiers "sshd_config" et "sudoers" au même endroit que pour le raspberry précédent.
     - Copiez le dossier "Scripts" vers "/home/pi". Il contient les scripts permettant de controler les mouvements de la carte de puissance du chariot.
+    - Activez l'utilisation dans le panneau de commande du raspberry (ou via la commande "sudo raspi-config").
 
 
 ## Programme principal
