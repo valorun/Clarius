@@ -12,8 +12,7 @@ iface lo inet loopback
 #config static
 
 iface eth0 inet static
-#address 192.168.1.5
-address 192.168.16.5
+address 192.168.1.5
 netmask 255.255.255.0
 gateway 192.168.1.254
 
@@ -23,17 +22,13 @@ gateway 192.168.1.254
 auto wlan0
 allow-hotplug wlan0
 iface wlan0 inet static
-#address 192.168.1.15
-address 192.168.16.15
+address 192.168.1.15
 netmask 255.255.255.0
 gateway 192.168.1.254
 
-wpa-ssid CLARIUS-STATION
+configuration routeur netgear
+wpa-ssid NETGEAR44
 wpa-psk Tengu98Clarius
-
-#configuration routeur netgear
-#wpa-ssid NETGEAR44
-#wpa-psk Tengu98Clarius
 
 wpa-ssid Bbox-F01B8BA7
 wpa-psk C63112E76D761A9F9E7C56AEC9E615
