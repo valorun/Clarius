@@ -9,6 +9,7 @@ public class Debug extends JFrame{
 
 	SliderDebugControl sliderDebugControl;
 	DebugButtonControl debugButtonControl;
+	StopWatchComponent stopWatch;
 	public Debug(String titre){
 		super(titre);
 		JPanel mainPanel = new JPanel();
@@ -22,7 +23,8 @@ public class Debug extends JFrame{
 		this.getContentPane().add(mainPanel);
 
 		//sliderDebugControl=new SliderDebugControl(Application.robot);
-		debugButtonControl=new DebugButtonControl(Application.robot);
+		stopWatch=new StopWatchComponent();
+		debugButtonControl=new DebugButtonControl(Application.robot, stopWatch);
 
 		gc.gridx = 0;
 		gc.gridy = 0;
@@ -33,6 +35,9 @@ public class Debug extends JFrame{
 		gc.gridx = 2;
 		gc.gridy = 0;
 		mainPanel.add(createBrasDPanel(), gc);
+		gc.gridx = 3;
+		gc.gridy = 0;
+		mainPanel.add(stopWatch, gc);
 
 		this.setPreferredSize(new Dimension(1024, 370));
 		this.setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);
@@ -436,7 +441,5 @@ public class Debug extends JFrame{
 
 		return brasDPanel;
 	}
-
-
 
 }

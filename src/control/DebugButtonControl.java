@@ -7,12 +7,16 @@ import java.awt.Color;
 import javax.swing.JButton;
 
 import robot.Robot;
+import vue.StopWatchComponent;
 import vue.UIConst;
 public class DebugButtonControl implements ActionListener {
 	Robot robot;
-
-	public DebugButtonControl(Robot robot) {
+	String previous;
+	StopWatchComponent stopWatch;
+	public DebugButtonControl(Robot robot, StopWatchComponent stopWatch) {
 		this.robot=robot;
+		this.stopWatch=stopWatch;
+		previous="";
 	}
 	public void actionPerformed(ActionEvent e) {
 		JButton source = (JButton)e.getSource();
@@ -162,9 +166,15 @@ public class DebugButtonControl implements ActionListener {
 			break;
 		}
 
-
-
-
+		}
+		if(previous.equals(name)) {
+			stopWatch.stop();
+			previous="";
+		}
+		else {
+			stopWatch.stop();
+			stopWatch.start();
+			previous=name;
 		}
 	}
 
