@@ -61,7 +61,7 @@ public class Robot{
 		tete=new Tete((TemporizedRelay) relaysMap.get("tete-gauche"),(TemporizedRelay) relaysMap.get("tete-droite"));
 		jambes=new Jambes(relaysMap.get("jambes-haut"), relaysMap.get("jambes-bas"));
 		chassis=new Chassis(relaysMap.get("chassis-haut"), relaysMap.get("chassis-bas"));
-		buste= new Buste(relaysMap.get("busteIncli-avant"), relaysMap.get("busteIncli-arriere"), relaysMap.get("busteRota-gauche"), relaysMap.get("busteRota-droite"));
+		buste= new Buste((TemporizedRelay)relaysMap.get("busteIncli-avant"), (TemporizedRelay) relaysMap.get("busteIncli-arriere"), (TemporizedRelay) relaysMap.get("busteRota-gauche"), (TemporizedRelay) relaysMap.get("busteRota-droite"));
 		camera= new Camera((TemporizedRelay)relaysMap.get("cameraVert-haut"),(TemporizedRelay) relaysMap.get("cameraVert-bas"), (TemporizedRelay)relaysMap.get("cameraHori-gauche"), (TemporizedRelay)relaysMap.get("cameraHori-droite"));
 		chariot=new Chariot();
 	}

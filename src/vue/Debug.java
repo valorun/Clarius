@@ -291,30 +291,30 @@ public class Debug extends JFrame{
 		gc.weightx = 1;
 		gc.weighty = 1;
 		
-		JButton ecarterButton=new JButton("ecarter");
-		JButton ramenerButton=new JButton("ramener");
+		//JButton ecarterButton=new JButton("ecarter");
+		//JButton ramenerButton=new JButton("ramener");
 		JButton leverButton=new JButton("lever");
 		JButton baisserButton=new JButton("baisser");
-		ecarterButton.setBackground(UIConst.RED);
-		ramenerButton.setBackground(UIConst.RED);
+		//ecarterButton.setBackground(UIConst.RED);
+		//ramenerButton.setBackground(UIConst.RED);
 		leverButton.setBackground(UIConst.RED);
 		baisserButton.setBackground(UIConst.RED);
-		ecarterButton.setName("epaule "+bras+" ecarter");
-		ramenerButton.setName("epaule "+bras+" ramener");
+		//ecarterButton.setName("epaule "+bras+" ecarter");
+		//ramenerButton.setName("epaule "+bras+" ramener");
 		leverButton.setName("epaule "+bras+" lever");
 		baisserButton.setName("epaule "+bras+" baisser");
 
-		ecarterButton.addActionListener(debugButtonControl);
-		ramenerButton.addActionListener(debugButtonControl);
+		//ecarterButton.addActionListener(debugButtonControl);
+		//ramenerButton.addActionListener(debugButtonControl);
 		leverButton.addActionListener(debugButtonControl);
 		baisserButton.addActionListener(debugButtonControl);
 
-		gc.gridx = 0;
-		gc.gridy = 0;
-		epaulePanel.add(ecarterButton, gc);
-		gc.gridx = 1;
-		gc.gridy = 0;
-		epaulePanel.add(ramenerButton, gc);
+		//gc.gridx = 0;
+		//gc.gridy = 0;
+		//epaulePanel.add(ecarterButton, gc);
+		//gc.gridx = 1;
+		//gc.gridy = 0;
+		//epaulePanel.add(ramenerButton, gc);
 		gc.gridx = 0;
 		gc.gridy = 1;
 		epaulePanel.add(leverButton, gc);

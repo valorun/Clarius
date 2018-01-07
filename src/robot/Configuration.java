@@ -66,8 +66,8 @@ public class Configuration{
 	private void readRelaysProperties() {
 		getRelay("tete-gauche", "4", 500);
 		getRelay("tete-droite", "18", 500);
-		getRelay("busteRota-gauche", "17");
-		getRelay("busteRota-droite", "23");
+		getRelay("busteRota-gauche", "17", 1000);
+		getRelay("busteRota-droite", "23", 1000);
 		getRelay("cameraHori-gauche", "27", 300);
 		getRelay("cameraHori-droite", "24", 300);
 		getRelay("cameraVert-bas", "22", 100);
@@ -76,8 +76,8 @@ public class Configuration{
 		getRelay("chassis-haut", "16");
 		getRelay("jambes-bas", "19");
 		getRelay("jambes-haut", "20");
-		getRelay("busteIncli-arriere", "26");
-		getRelay("busteIncli-avant", "21");
+		getRelay("busteIncli-arriere", "26", 6000);
+		getRelay("busteIncli-avant", "21", 2500);
 
 		getRelay("onOffCartes", "5");
 		getRelay("eclairage", "6");

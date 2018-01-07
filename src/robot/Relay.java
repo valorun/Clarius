@@ -58,9 +58,9 @@ public class Relay{
 	 * Méthode permettant d'allumer un relai pour un temps donné.
 	 * @param D représente le temps en secondes pendant lequel on veut activer le relai.
 	 */
-	public void enableRelayFor( float D){
+	public void enableRelayFor( int D){
 		try {
-			Configuration.rasPiCorps.sendCommand("sudo /home/pi/Scripts/sequence.bash " + this.name + " " + Float.toString(D / 1000));
+			Configuration.rasPiCorps.sendCommand("sudo /home/pi/Scripts/sequence.bash " + this.name + " " + Integer.toString(D));
 		} 
 		catch (Exception e) {
 

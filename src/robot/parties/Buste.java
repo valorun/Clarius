@@ -3,38 +3,31 @@ import robot.*;
 import java.util.concurrent.TimeUnit;
 
 public class Buste{
-	Relay avant;
-	Relay arriere;
-	Relay gauche;
-	Relay droite;
+	TemporizedRelay avant;
+	TemporizedRelay arriere;
+	TemporizedRelay gauche;
+	TemporizedRelay droite;
 	int position;
 	static int tempsPasRota=2000;//temps pour un pas de rotation
 	
-	public Buste(Relay avant, Relay arriere, Relay gauche, Relay droite){
+	public Buste(TemporizedRelay avant, TemporizedRelay arriere, TemporizedRelay gauche, TemporizedRelay droite){
 		this.avant=avant;
 		this.arriere=arriere;
 		this.gauche=gauche;
 		this.droite=droite;
 		position=0;
 	}
-	public Buste(String avant, String arriere, String gauche, String droite){
-		this.avant=new Relay(avant);
-		this.arriere=new Relay(arriere);
-		this.gauche=new Relay(gauche);
-		this.droite=new Relay(droite);
-		position=0;
-	}
 	
-	public Relay getGauche(){
+	public TemporizedRelay getGauche(){
 		return gauche;
 	}
-	public Relay getDroite(){
+	public TemporizedRelay getDroite(){
 		return droite;
 	}
-	public Relay getAvant(){
+	public TemporizedRelay getAvant(){
 		return avant;
 	}
-	public Relay getArriere(){
+	public TemporizedRelay getArriere(){
 		return arriere;
 	}
 	
@@ -59,10 +52,10 @@ public class Buste{
 	}
 	
 	public void tourner(int value) {
-		Relay relay = gauche;
+		TemporizedRelay relay = gauche;
         if (value - position < 0) relay = gauche;// si on va vers la gauche, c'est le relai 1 qu'on choisi
         if (value - position > 0) relay = droite;// sinon on choisis le relai 2        
-        int D = tempsPasRota * (int)(Math.abs(value - position));
+        int D = relay.getTempo() * (int)(Math.abs(value - position));
         System.out.println(Math.abs(value - position));
         relay.enableRelayFor(D);// le delai est ici calculé en fonction de la durée D d'un pas de rotation et de la longueur du trajet.
         position = value;
@@ -70,7 +63,6 @@ public class Buste{
         	TimeUnit.MILLISECONDS.sleep(D);
         }
         catch(Exception e){}
-
 	}
 
 	

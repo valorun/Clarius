@@ -25,7 +25,7 @@ public class Sequence{
 	 * @param time représente le temps en millisecondes, pendant lequel on active le relay.
 	 */
 	public void addRelay(String relay, int time) {
-		relays.add(relay+" "+time);
+		relays.add(" "+relay+" "+time);
 		timeTotal+=time;
 	}
 	/**
