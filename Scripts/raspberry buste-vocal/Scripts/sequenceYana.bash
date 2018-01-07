@@ -8,7 +8,7 @@ CONFIG_FILE="config.txt"
 function getTemp {
         tempo="$(grep -w "${1}.tempo" "~/Scripts/$CONFIG_FILE" | cut -d "=" -f 2)"
         if [ $(echo $tempo | wc -l) -ne 0 ] ; then # on vérifie si une temporisation existe
-            echo "scale=3;$tempo / 1000" | bc -l
+            echo $tempo
         else
             echo "none"
         fi
