@@ -1,7 +1,7 @@
 #!/bin/bash 
 #/home/pi/Scripts/sequence.bash
 #on envoie dabord en argument le pin puis le temps d'allumage entre les pins
-SCRIPTS_LOCATION="~/Scripts"
+SCRIPTS_LOCATION="/home/pi/Scripts"
 args=("$@") 
 for (( c=0; c<"$#"; c+=2 )) 
 do

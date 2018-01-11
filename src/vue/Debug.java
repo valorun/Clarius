@@ -441,5 +441,32 @@ public class Debug extends JFrame{
 
 		return brasDPanel;
 	}
+	public JPanel createMiscPanel() {
+		JPanel miscPanel=new JPanel();
+		miscPanel.setLayout(new GridBagLayout());
+		GridBagConstraints gc = new GridBagConstraints();
+		gc.fill = GridBagConstraints.BOTH;//ordonne d'étirer les composants dans les deux sens quand ils le peuvent
+		gc.insets = new Insets(0,0,0,0);//marge entre les composants
+		gc.ipady = gc.anchor = GridBagConstraints.CENTER;//si les composants n'occuppent pas tout l'espace, ils sont placés au milieu
+		gc.weightx = 1;
+		gc.weighty = 1;
+
+		gc.gridx = 0;
+		gc.gridy = 0;
+		miscPanel.add(createEpaulePanel("droit"), gc);
+		gc.gridx = 1;
+		gc.gridy = 0;
+		miscPanel.add(createAvBrasPanel("droit"), gc);
+		gc.gridx = 0;
+		gc.gridy = 1;
+		miscPanel.add(createPoignetPanel("droit"), gc);
+		gc.gridx = 1;
+		gc.gridy = 1;
+		miscPanel.add(createMainPanel("droit"), gc);
+
+		miscPanel.setBorder(new TitledBorder(" Commandes bras droit "));
+
+		return miscPanel;
+	}
 
 }

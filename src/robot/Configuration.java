@@ -82,6 +82,7 @@ public class Configuration{
 		getRelay("onOffCartes", "5");
 		getRelay("eclairage", "6");
 		getRelay("lumiereYeux", "B15");
+		getRelay("diodesBuste", "B17");
 		/*##### pins bras gauche #####*/
 		getRelay("brasFrontalG-lever", "A18");
 		getRelay("brasFrontalG-baisser", "A17");
