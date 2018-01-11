@@ -1,4 +1,4 @@
-#Sun Jan 07 19:03:23 CET 2018
+#Thu Jan 11 18:44:42 CET 2018
 tete-droite.pin=18
 ip_corps=192.168.1.16
 cameraHori-droite.pin=24
@@ -31,8 +31,10 @@ tete-droite.tempo=500
 mainG-ouvrir.pin=A11
 busteRota-droite.tempo=1000
 brasLateralD-ramener.pin=A25
+diodes_buste=B17
 brasFrontalD-lever.pin=A28
 poignetD-exterieur.pin=B22
+video_url=http\://192.168.1.15/cam_pic_new.php?time\=1515685109169&pDelay\=40000
 onOffCartes.pin=5
 password=raspberry
 jambes-bas.pin=19

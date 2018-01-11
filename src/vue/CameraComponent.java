@@ -20,6 +20,7 @@ public class CameraComponent extends JComponent{
 	String url;
 	boolean libFound;
 	boolean enabled;
+	boolean playing;
 	/**
 	 * Constructeur de la classe CameraComponent.
 	 * @param url qui représente l'url de la transmission de la caméra.
@@ -49,11 +50,13 @@ public class CameraComponent extends JComponent{
 	public void playStream() {
 		System.out.println(url);
 		mediaPlayer.getMediaPlayer().playMedia(url);
+		playing=true;
 	}
 	/**
 	 * Méthode permettant d'arréter la lecture du flux vidéo de la caméra.
 	 */
 	public void stopStream() {
+		if(playing)
 		mediaPlayer.getMediaPlayer().stop();
 	}
 
