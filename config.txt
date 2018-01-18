@@ -1,4 +1,4 @@
-#Thu Jan 11 19:22:15 CET 2018
+#Wed Jan 17 19:37:37 CET 2018
 tete-droite.pin=18
 ip_corps=192.168.1.16
 cameraHori-droite.pin=24
@@ -10,6 +10,7 @@ chassis-bas.pin=13
 brasLateralD-ecarter.pin=A26
 cameraHori-droite.tempo=300
 brasFrontalD-baisser.pin=A27
+brasFrontalG-baisser.tempo=150
 busteIncli-arriere.pin=26
 cameraVert-haut.pin=25
 brasLateralG-ecarter.pin=A16
@@ -17,6 +18,7 @@ eclairage.pin=6
 brasFrontalG-baisser.pin=A17
 avantBrasG-lever.pin=A14
 poignetG-exterieur.pin=B24
+brasFrontalD-baisser.tempo=150
 lumiereYeux.pin=B15
 jambes-haut.pin=20
 chassis-haut.pin=16
@@ -32,16 +34,18 @@ mainG-ouvrir.pin=A11
 busteRota-droite.tempo=1000
 brasLateralD-ramener.pin=A25
 brasFrontalD-lever.pin=A28
-video_url=http\://192.168.1.15/cam_pic_new.php?time\=1515685109169&pDelay\=40000
 poignetD-exterieur.pin=B22
+video_url=http\://192.168.1.15/cam_pic_new.php?time\=1515685109169&pDelay\=40000
 onOffCartes.pin=5
 password=raspberry
-jambes-bas.pin=19
+brasFrontalD-lever.tempo=200
 tete-gauche.pin=4
+jambes-bas.pin=19
 username=pi
 brasLateralG-ramener.pin=A15
 diodesBuste.pin=B17
 cameraHori-gauche.pin=27
+brasFrontalG-lever.tempo=200
 cameraVert-haut.tempo=100
 busteIncli-avant.tempo=2500
 avantBrasD-baisser.pin=A23

@@ -47,7 +47,7 @@ public class Bras{
 		try{
 			Sequence seq=new Sequence();
 			seq.addRelay( epaule.getInterieur(), 10);
-			seq.addRelay( epaule.getBas(), 10);
+			seq.addRelay( epaule.getBas(), epaule.getBas().getTempo());
 			seq.addRelay( avBras.getBas(), 10);
 			seq.execute();
 			TimeUnit.MILLISECONDS.sleep(seq.getTimeTotal());

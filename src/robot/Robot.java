@@ -46,13 +46,13 @@ public class Robot{
 		lumiereYeux=relaysMap.get("lumiereYeux");
 		onOffCartes=relaysMap.get("onOffCartes");
 		
-		Epaule epauleG=new Epaule(relaysMap.get("brasFrontalG-lever"), relaysMap.get("brasFrontalG-baisser"), relaysMap.get("brasLateralG-ecarter"), relaysMap.get("brasLateralG-ramener"));
+		Epaule epauleG=new Epaule((TemporizedRelay)relaysMap.get("brasFrontalG-lever"), (TemporizedRelay)relaysMap.get("brasFrontalG-baisser"), relaysMap.get("brasLateralG-ecarter"), relaysMap.get("brasLateralG-ramener"));
 		AvantBras avBrasG=new AvantBras(relaysMap.get("avantBrasG-lever"), relaysMap.get("avantBrasG-baisser"));
 		Poignet poignetG=new Poignet(relaysMap.get("poignetG-exterieur"), relaysMap.get("poignetG-interieur"));
 		Main mainG=new Main(relaysMap.get("mainG-fermer"), relaysMap.get("mainG-ouvrir"));
 		brasGauche=new Bras(epauleG,avBrasG,poignetG,mainG);
 
-		Epaule epauleD=new Epaule(relaysMap.get("brasFrontalD-lever"), relaysMap.get("brasFrontalD-baisser"), relaysMap.get("brasLateralD-ecarter"), relaysMap.get("brasLateralD-ramener"));
+		Epaule epauleD=new Epaule((TemporizedRelay)relaysMap.get("brasFrontalD-lever"), (TemporizedRelay)relaysMap.get("brasFrontalD-baisser"), relaysMap.get("brasLateralD-ecarter"), relaysMap.get("brasLateralD-ramener"));
 		AvantBras avBrasD=new AvantBras(relaysMap.get("avantBrasD-lever"), relaysMap.get("avantBrasD-baisser"));
 		Poignet poignetD=new Poignet(relaysMap.get("poignetD-interieur"), relaysMap.get("poignetD-exterieur"));
 		Main mainD=new Main(relaysMap.get("mainD-fermer"), relaysMap.get("mainD-ouvrir"));

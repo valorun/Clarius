@@ -2,28 +2,22 @@ package robot.parties.bras;
 import robot.*;
 
 public class Epaule{
-	Relay haut;
-	Relay bas;
+	TemporizedRelay haut;
+	TemporizedRelay bas;
 	Relay exterieur;
 	Relay interieur;
 	
-	public Epaule(Relay haut, Relay bas, Relay exterieur, Relay interieur){
+	public Epaule(TemporizedRelay haut, TemporizedRelay bas, Relay exterieur, Relay interieur){
 		this.haut=haut;
 		this.bas=bas;
 		this.exterieur=exterieur;
 		this.interieur=interieur;
 	}
-	public Epaule(String haut, String bas, String exterieur, String interieur){
-		this.haut=new Relay(haut);
-		this.bas=new Relay(bas);
-		this.exterieur=new Relay(exterieur);
-		this.interieur=new Relay(interieur);
-	}
 	
-	public Relay getHaut(){
+	public TemporizedRelay getHaut(){
 		return haut;
 	}
-	public Relay getBas(){
+	public TemporizedRelay getBas(){
 		return bas;
 	}
 	public Relay getExterieur(){
