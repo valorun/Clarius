@@ -114,6 +114,16 @@ public class Raspberry{
 		catch(Exception e) {}
 	}
 	/**
+	 * Méthode permettant de redémarrer le raspberry a distance puis de fermer la liaison SSH avec celui ci.
+	 */
+	public void restart() {
+		try {
+			sendCommand("sudo reboot");
+			disconnect();
+		}
+		catch(Exception e) {}
+	}
+	/**
 	 * Méthode permettant de savoir si le raspberry est connecté sur le réseau.
 	 * @return True si le raspberry est pingable, False sinon.
 	 */

@@ -11,6 +11,10 @@ public class MenuBar extends JMenuBar{
 	JMenuItem shutdownChar;
 	JMenuItem shutdownCam;
 	JMenuItem shutdownAll;
+	JMenuItem restartCorps;
+	JMenuItem restartChar;
+	JMenuItem restartCam;
+	JMenuItem restartAll;
 	
 	public MenuBar(MenuControl control) {
 		this.control=control;
@@ -25,6 +29,10 @@ public class MenuBar extends JMenuBar{
 		shutdownChar = new JMenuItem("Shutdown raspi chariot"); //eteint le raspberry du chariot
 		shutdownCam = new JMenuItem("Shutdown raspi caméra"); //eteint le raspberry de la caméra
 		shutdownAll = new JMenuItem("Shutdown all raspis"); //eteint tout les raspberries
+		restartCorps = new JMenuItem("Restart raspi corps"); //redémarre le raspberry du corps
+		restartChar = new JMenuItem("Restart raspi chariot"); //redémarre le raspberry du chariot
+		restartCam = new JMenuItem("Restart raspi caméra"); //redémarre le raspberry de la caméra
+		restartAll = new JMenuItem("Restart all raspis"); //redémarre tout les raspberries
 
 		menu1.add(debug);
 		menu1.add(config);
@@ -32,8 +40,12 @@ public class MenuBar extends JMenuBar{
 		menu2.add(shutdownCorps);
 		menu2.add(shutdownChar);
 		menu2.add(shutdownCam);
+		menu2.add(restartCorps);
+		menu2.add(restartChar);
+		menu2.add(restartCam);
 	    menu2.add(new JSeparator()); // SEPARATOR
 		menu2.add(shutdownAll);
+		menu2.add(restartAll);
 		debug.addActionListener(control);
 		config.addActionListener(control);
 		quitter.addActionListener(control);
@@ -41,6 +53,10 @@ public class MenuBar extends JMenuBar{
 		shutdownChar.addActionListener(control);
 		shutdownCam.addActionListener(control);
 		shutdownAll.addActionListener(control);
+		restartCorps.addActionListener(control);
+		restartChar.addActionListener(control);
+		restartCam.addActionListener(control);
+		restartAll.addActionListener(control);
 		/*ajout des sous-menus dans le menu */
 		this.add(menu1);
 		this.add(menu2);
@@ -51,6 +67,10 @@ public class MenuBar extends JMenuBar{
 		shutdownChar.setEnabled(Configuration.rasPiChar.checkConnection());
 		shutdownCam.setEnabled(Configuration.rasPiCam.checkConnection());
 		shutdownAll.setEnabled(Configuration.rasPiCam.checkConnection() || Configuration.rasPiCorps.checkConnection() || Configuration.rasPiChar.checkConnection());
+		restartCorps.setEnabled(Configuration.rasPiCorps.checkConnection());
+		restartChar.setEnabled(Configuration.rasPiChar.checkConnection());
+		restartCam.setEnabled(Configuration.rasPiCam.checkConnection());
+		restartAll.setEnabled(Configuration.rasPiCam.checkConnection() || Configuration.rasPiCorps.checkConnection() || Configuration.rasPiChar.checkConnection());
 	}
 	
 	

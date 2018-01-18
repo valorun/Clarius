@@ -62,6 +62,25 @@ public class MenuControl implements ActionListener {
 			if(Configuration.rasPiCam.checkConnection())Configuration.rasPiCam.shutdown();
 			break;
 		}
+		
+		case "Restart raspi corps":{
+			Configuration.rasPiCorps.restart();
+			break;
+		}
+		case "Restart raspi chariot":{
+			Configuration.rasPiChar.restart();
+			break;
+		}
+		case "Restart raspi caméra":{
+			Configuration.rasPiCam.restart();
+			break;
+		}
+		case "Restart all raspis":{
+			if(Configuration.rasPiCorps.checkConnection())Configuration.rasPiCorps.restart();
+			if(Configuration.rasPiChar.checkConnection())Configuration.rasPiChar.restart();
+			if(Configuration.rasPiCam.checkConnection())Configuration.rasPiCam.restart();
+			break;
+		}
 		}
 		app.updateConnectButtons();
 		app.updatePanels();
