@@ -2,21 +2,17 @@ package robot.parties.bras;
 import robot.*;
 
 public class Main{
-	Relay fermer;
-	Relay ouvrir;
+	TemporizedRelay fermer;
+	TemporizedRelay ouvrir;
 	
-	public Main(Relay fermer, Relay ouvrir){
+	public Main(TemporizedRelay fermer, TemporizedRelay ouvrir){
 		this.fermer=fermer;
 		this.ouvrir=ouvrir;
 	}
-	public Main(String fermer, String ouvrir){
-		this.fermer=new Relay(fermer);
-		this.ouvrir=new Relay(ouvrir);
-	}
-	public Relay getOuvrir(){
+	public TemporizedRelay getOuvrir(){
 		return ouvrir;
 	}
-	public Relay getFermer(){
+	public TemporizedRelay getFermer(){
 		return fermer;
 	}
 	

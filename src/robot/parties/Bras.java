@@ -36,8 +36,8 @@ public class Bras{
 		try{
 			Sequence seq=new Sequence();
 			seq.addRelay( epaule.getExterieur(), 10);
-			seq.addRelay( epaule.getHaut(), 10);
-			seq.addRelay( avBras.getHaut(), 10);
+			seq.addRelay( epaule.getHaut(), epaule.getHaut().getTempo());
+			seq.addRelay( avBras.getHaut(), avBras.getHaut().getTempo());
 			seq.execute();
 			TimeUnit.MILLISECONDS.sleep(seq.getTimeTotal());
 		}
@@ -48,7 +48,7 @@ public class Bras{
 			Sequence seq=new Sequence();
 			seq.addRelay( epaule.getInterieur(), 10);
 			seq.addRelay( epaule.getBas(), epaule.getBas().getTempo());
-			seq.addRelay( avBras.getBas(), 10);
+			seq.addRelay( avBras.getBas(), avBras.getBas().getTempo());
 			seq.execute();
 			TimeUnit.MILLISECONDS.sleep(seq.getTimeTotal());
 		}

@@ -2,22 +2,18 @@ package robot.parties.bras;
 import robot.*;
 
 public class AvantBras{
-	Relay haut;
-	Relay bas;
+	TemporizedRelay haut;
+	TemporizedRelay bas;
 	
-	public AvantBras(Relay haut, Relay bas){
+	public AvantBras(TemporizedRelay haut, TemporizedRelay bas){
 		this.haut=haut;
 		this.bas=bas;
 	}
-	public AvantBras(String haut, String bas){
-		this.haut=new Relay(haut);
-		this.bas=new Relay(bas);
-	}
 	
-	public Relay getHaut(){
+	public TemporizedRelay getHaut(){
 		return haut;
 	}
-	public Relay getBas(){
+	public TemporizedRelay getBas(){
 		return bas;
 	}
 	

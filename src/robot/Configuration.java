@@ -16,17 +16,19 @@ import com.jcraft.jsch.JSchException;
  */
 
 public class Configuration{
-
+	public static Configuration instance;
 	public static String videoUrl;
 	public static boolean cameraEnabled;
 	public static Raspberry rasPiCorps;
 	public static Raspberry rasPiChar;
 	public static Raspberry rasPiCam;
-	public static File configFile=new File(System.getProperty("user.dir")+"/config.txt");
+	public static File configFile;
 	private Properties properties;
-	private HashMap<String, Relay> relaysMap = new HashMap<String, Relay>();
+	public static HashMap<String, Relay> relaysMap;
 
 	public Configuration() {
+		if(instance==null)instance=this;
+		configFile=new File(System.getProperty("user.dir")+"/config.txt");
 		properties=new Properties();
 
 		if(!configFile.exists()){ //si le fichier de config n'existe pas, on en creer un par défaut
@@ -64,6 +66,7 @@ public class Configuration{
 		rasPiCam=new Raspberry(ipCam, username, password);
 	}
 	private void readRelaysProperties() {
+		relaysMap = new HashMap<String, Relay>();
 		getRelay("tete-gauche", "4", 500);
 		getRelay("tete-droite", "18", 500);
 		getRelay("busteRota-gauche", "17", 1000);
@@ -72,10 +75,10 @@ public class Configuration{
 		getRelay("cameraHori-droite", "24", 300);
 		getRelay("cameraVert-bas", "22", 100);
 		getRelay("cameraVert-haut", "25", 100);
-		getRelay("chassis-bas", "13");
-		getRelay("chassis-haut", "16");
-		getRelay("jambes-bas", "19");
-		getRelay("jambes-haut", "20");
+		getRelay("chassis-bas", "13", 10000);
+		getRelay("chassis-haut", "16", 11000);
+		getRelay("jambes-bas", "19", 5000);
+		getRelay("jambes-haut", "20", 7000);
 		getRelay("busteIncli-arriere", "26", 6000);
 		getRelay("busteIncli-avant", "21", 2500);
 
@@ -88,23 +91,23 @@ public class Configuration{
 		getRelay("brasFrontalG-baisser", "A17",150);
 		getRelay("brasLateralG-ecarter", "A16");
 		getRelay("brasLateralG-ramener", "A15");
-		getRelay("avantBrasG-lever", "A14");
-		getRelay("avantBrasG-baisser", "A13");
-		getRelay("mainG-fermer", "A12");
-		getRelay("mainG-ouvrir", "A11");
-		getRelay("poignetG-exterieur", "B24");
-		getRelay("poignetG-interieur", "B23");
+		getRelay("avantBrasG-lever", "A14", 4000);
+		getRelay("avantBrasG-baisser", "A13", 4000);
+		getRelay("mainG-fermer", "A12", 500);
+		getRelay("mainG-ouvrir", "A11", 500);
+		getRelay("poignetG-exterieur", "B24", 200);
+		getRelay("poignetG-interieur", "B23", 200);
 		/*##### pins bras droit #####*/
 		getRelay("brasFrontalD-lever", "A28", 200);
 		getRelay("brasFrontalD-baisser", "A27", 150);
 		getRelay("brasLateralD-ecarter", "A26");
 		getRelay("brasLateralD-ramener", "A25");
-		getRelay("avantBrasD-lever", "A24");
-		getRelay("avantBrasD-baisser", "A23");
-		getRelay("mainD-fermer", "A22");
-		getRelay("mainD-ouvrir", "A21");
-		getRelay("poignetD-exterieur", "B22");
-		getRelay("poignetD-interieur", "B21");
+		getRelay("avantBrasD-lever", "A24", 4000);
+		getRelay("avantBrasD-baisser", "A23", 4000);
+		getRelay("mainD-fermer", "A22", 500);
+		getRelay("mainD-ouvrir", "A21", 500);
+		getRelay("poignetD-exterieur", "B22", 200);
+		getRelay("poignetD-interieur", "B21", 200);
 
 	}
 	private void readMiscProperties() {

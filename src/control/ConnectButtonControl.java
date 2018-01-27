@@ -15,9 +15,9 @@ public class ConnectButtonControl implements ActionListener {
 	Application app;
 	Configuration config;
 
-	public ConnectButtonControl(Application app, Configuration config) {
+	public ConnectButtonControl(Application app) {
 		this.app=app;
-		this.config=config;
+		this.config=Configuration.instance;
 	}
 	public void actionPerformed(ActionEvent e) {
 		JButton source = (JButton)e.getSource();

@@ -52,7 +52,7 @@ public class Application extends JFrame{
 	public Application(String titre){
 		super(titre);
 		configuration=new Configuration();
-		robot=new Robot(configuration.getRelaysMap());
+		robot=new Robot(Configuration.relaysMap);
 		setUpPanels();
 
 		this.addWindowListener(new WindowAdapter()
@@ -90,7 +90,7 @@ public class Application extends JFrame{
 		this.getContentPane().add(mainPanel);
 
 		sliderControl =new SliderControl(robot);
-		connectButtonControl=new ConnectButtonControl(this, configuration);
+		connectButtonControl=new ConnectButtonControl(this);
 		onOffSlider=new JSlider(JSlider.HORIZONTAL, 0, 1, 0);
 		vitesseSlider=new JSlider(JSlider.VERTICAL, 1, 2047, 1);
 		chariotButtonControl=new ChariotButtonControl(robot, vitesseSlider);

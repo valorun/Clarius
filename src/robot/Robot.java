@@ -46,21 +46,21 @@ public class Robot{
 		lumiereYeux=relaysMap.get("lumiereYeux");
 		onOffCartes=relaysMap.get("onOffCartes");
 		
-		Epaule epauleG=new Epaule((TemporizedRelay)relaysMap.get("brasFrontalG-lever"), (TemporizedRelay)relaysMap.get("brasFrontalG-baisser"), relaysMap.get("brasLateralG-ecarter"), relaysMap.get("brasLateralG-ramener"));
-		AvantBras avBrasG=new AvantBras(relaysMap.get("avantBrasG-lever"), relaysMap.get("avantBrasG-baisser"));
-		Poignet poignetG=new Poignet(relaysMap.get("poignetG-exterieur"), relaysMap.get("poignetG-interieur"));
-		Main mainG=new Main(relaysMap.get("mainG-fermer"), relaysMap.get("mainG-ouvrir"));
+		Epaule epauleG=new Epaule((TemporizedRelay)relaysMap.get("brasFrontalG-lever"), (TemporizedRelay)relaysMap.get("brasFrontalG-baisser"), (TemporizedRelay)relaysMap.get("brasLateralG-ecarter"), (TemporizedRelay)relaysMap.get("brasLateralG-ramener"));
+		AvantBras avBrasG=new AvantBras((TemporizedRelay)relaysMap.get("avantBrasG-lever"), (TemporizedRelay)relaysMap.get("avantBrasG-baisser"));
+		Poignet poignetG=new Poignet((TemporizedRelay)relaysMap.get("poignetG-exterieur"), (TemporizedRelay)relaysMap.get("poignetG-interieur"));
+		Main mainG=new Main( (TemporizedRelay)relaysMap.get("mainG-fermer"), (TemporizedRelay)relaysMap.get("mainG-ouvrir"));
 		brasGauche=new Bras(epauleG,avBrasG,poignetG,mainG);
 
-		Epaule epauleD=new Epaule((TemporizedRelay)relaysMap.get("brasFrontalD-lever"), (TemporizedRelay)relaysMap.get("brasFrontalD-baisser"), relaysMap.get("brasLateralD-ecarter"), relaysMap.get("brasLateralD-ramener"));
-		AvantBras avBrasD=new AvantBras(relaysMap.get("avantBrasD-lever"), relaysMap.get("avantBrasD-baisser"));
-		Poignet poignetD=new Poignet(relaysMap.get("poignetD-interieur"), relaysMap.get("poignetD-exterieur"));
-		Main mainD=new Main(relaysMap.get("mainD-fermer"), relaysMap.get("mainD-ouvrir"));
+		Epaule epauleD=new Epaule((TemporizedRelay)relaysMap.get("brasFrontalD-lever"), (TemporizedRelay)relaysMap.get("brasFrontalD-baisser"), (TemporizedRelay)relaysMap.get("brasLateralD-ecarter"), (TemporizedRelay)relaysMap.get("brasLateralD-ramener"));
+		AvantBras avBrasD=new AvantBras((TemporizedRelay)relaysMap.get("avantBrasD-lever"), (TemporizedRelay)relaysMap.get("avantBrasD-baisser"));
+		Poignet poignetD=new Poignet((TemporizedRelay)relaysMap.get("poignetD-interieur"), (TemporizedRelay)relaysMap.get("poignetD-exterieur"));
+		Main mainD=new Main( (TemporizedRelay)relaysMap.get("mainD-fermer"), (TemporizedRelay)relaysMap.get("mainD-ouvrir"));
 		brasDroit=new Bras(epauleD,avBrasD,poignetD,mainD);
 
 		tete=new Tete((TemporizedRelay) relaysMap.get("tete-gauche"),(TemporizedRelay) relaysMap.get("tete-droite"));
-		jambes=new Jambes(relaysMap.get("jambes-haut"), relaysMap.get("jambes-bas"));
-		chassis=new Chassis(relaysMap.get("chassis-haut"), relaysMap.get("chassis-bas"));
+		jambes=new Jambes((TemporizedRelay)relaysMap.get("jambes-haut"), (TemporizedRelay)relaysMap.get("jambes-bas"));
+		chassis=new Chassis((TemporizedRelay)relaysMap.get("chassis-haut"), (TemporizedRelay)relaysMap.get("chassis-bas"));
 		buste= new Buste((TemporizedRelay)relaysMap.get("busteIncli-avant"), (TemporizedRelay) relaysMap.get("busteIncli-arriere"), (TemporizedRelay) relaysMap.get("busteRota-gauche"), (TemporizedRelay) relaysMap.get("busteRota-droite"));
 		camera= new Camera((TemporizedRelay)relaysMap.get("cameraVert-haut"),(TemporizedRelay) relaysMap.get("cameraVert-bas"), (TemporizedRelay)relaysMap.get("cameraHori-gauche"), (TemporizedRelay)relaysMap.get("cameraHori-droite"));
 		chariot=new Chariot();

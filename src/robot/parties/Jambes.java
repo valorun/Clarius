@@ -2,22 +2,18 @@ package robot.parties;
 import robot.*;
 
 public class Jambes{
-	Relay haut;
-	Relay bas;
+	TemporizedRelay haut;
+	TemporizedRelay bas;
 	
-	public Jambes(Relay haut, Relay bas){
+	public Jambes(TemporizedRelay haut, TemporizedRelay bas){
 		this.haut=haut;
 		this.bas=bas;
 	}
-	public Jambes(String haut, String bas){
-		this.haut=new Relay(haut);
-		this.bas=new Relay(bas);
-	}
 	
-	public Relay getHaut(){
+	public TemporizedRelay getHaut(){
 		return haut;
 	}
-	public Relay getBas(){
+	public TemporizedRelay getBas(){
 		return bas;
 	}
 

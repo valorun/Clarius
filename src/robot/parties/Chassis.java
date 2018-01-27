@@ -2,22 +2,18 @@ package robot.parties;
 import robot.*;
 
 public class Chassis{
-	Relay haut;
-	Relay bas;
+	TemporizedRelay haut;
+	TemporizedRelay bas;
 	
-	public Chassis(Relay haut, Relay bas){
+	public Chassis(TemporizedRelay haut, TemporizedRelay bas){
 		this.haut=haut;
 		this.bas=bas;
 	}
-	public Chassis(String haut, String bas){
-		this.haut=new Relay(haut);
-		this.bas=new Relay(bas);
-	}
 	
-	public Relay getHaut(){
+	public TemporizedRelay getHaut(){
 		return haut;
 	}
-	public Relay getBas(){
+	public TemporizedRelay getBas(){
 		return bas;
 	}
 	

@@ -2,22 +2,18 @@ package robot.parties.bras;
 import robot.*;
 
 public class Poignet{
-	Relay gauche;
-	Relay droite;
+	TemporizedRelay gauche;
+	TemporizedRelay droite;
 	
-	public Poignet(Relay gauche, Relay droite){
+	public Poignet(TemporizedRelay gauche, TemporizedRelay droite){
 		this.gauche=gauche;
 		this.droite=droite;
 	}
-	public Poignet(String gauche, String droite){
-		this.gauche=new Relay(gauche);
-		this.droite=new Relay(droite);
-	}
 	
-	public Relay getGauche(){
+	public TemporizedRelay getGauche(){
 		return gauche;
 	}
-	public Relay getDroite(){
+	public TemporizedRelay getDroite(){
 		return droite;
 	}
 	

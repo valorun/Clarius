@@ -4,10 +4,10 @@ import robot.*;
 public class Epaule{
 	TemporizedRelay haut;
 	TemporizedRelay bas;
-	Relay exterieur;
-	Relay interieur;
+	TemporizedRelay exterieur;
+	TemporizedRelay interieur;
 	
-	public Epaule(TemporizedRelay haut, TemporizedRelay bas, Relay exterieur, Relay interieur){
+	public Epaule(TemporizedRelay haut, TemporizedRelay bas, TemporizedRelay exterieur, TemporizedRelay interieur){
 		this.haut=haut;
 		this.bas=bas;
 		this.exterieur=exterieur;
@@ -20,10 +20,10 @@ public class Epaule{
 	public TemporizedRelay getBas(){
 		return bas;
 	}
-	public Relay getExterieur(){
+	public TemporizedRelay getExterieur(){
 		return exterieur;
 	}
-	public Relay getInterieur(){
+	public TemporizedRelay getInterieur(){
 		return interieur;
 	}
 	//commandes de mouvement
