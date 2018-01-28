@@ -6,7 +6,7 @@ public class Epaule{
 	TemporizedRelay bas;
 	TemporizedRelay exterieur;
 	TemporizedRelay interieur;
-	
+	int positionY;
 	public Epaule(TemporizedRelay haut, TemporizedRelay bas, TemporizedRelay exterieur, TemporizedRelay interieur){
 		this.haut=haut;
 		this.bas=bas;
@@ -44,6 +44,14 @@ public class Epaule{
 		bas.enableRelay(0);
 		exterieur.enableRelay(0);
 		interieur.enableRelay(0);
+	}
+	public void lever_baisser(int value) {
+		TemporizedRelay relay = bas;
+        if (value - positionY < 0) relay = bas;// si on va vers la gauche, c'est le relai 1 qu'on choisi
+        if (value - positionY > 0) relay = haut;// sinon on choisis le relai 2        
+        int D = relay.getTempo() * Math.abs(value - positionY);
+        relay.enableRelayFor(D);// le delai est ici calculé en fonction de la durée D d'un pas de rotation et de la longueur du trajet.
+        positionY = value;
 	}
 	
 }

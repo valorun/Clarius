@@ -19,7 +19,6 @@ public class Application extends JFrame{
 	JPanel chariotPanel;
 	JPanel commandesPanel;
 
-	SliderControl sliderControl;
 	ConnectButtonControl connectButtonControl;
 	ChariotButtonControl chariotButtonControl;
 	LightButtonControl lightButtonControl;
@@ -89,7 +88,6 @@ public class Application extends JFrame{
 		gc.weighty = 1;
 		this.getContentPane().add(mainPanel);
 
-		sliderControl =new SliderControl(robot);
 		connectButtonControl=new ConnectButtonControl(this);
 		onOffSlider=new JSlider(JSlider.HORIZONTAL, 0, 1, 0);
 		vitesseSlider=new JSlider(JSlider.VERTICAL, 1, 2047, 1);
@@ -349,7 +347,7 @@ public class Application extends JFrame{
 		slider.setSnapToTicks(true);
 		slider.setName(name);
 		slider.setPaintTicks(true);
-		slider.addChangeListener(sliderControl);
+		slider.addChangeListener(new SliderControl(robot));
 	}
 	public static void delay(int milliSeconds) {
 		final ScheduledExecutorService executorService = Executors.newSingleThreadScheduledExecutor();

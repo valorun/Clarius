@@ -68,7 +68,7 @@ public class Configuration{
 	private void readRelaysProperties() {
 		relaysMap = new HashMap<String, Relay>();
 		getRelay("tete-gauche", "4", 500);
-		getRelay("tete-droite", "18", 500);
+		getRelay("tete-droite", "18", 400);
 		getRelay("busteRota-gauche", "17", 1000);
 		getRelay("busteRota-droite", "23", 1000);
 		getRelay("cameraHori-gauche", "27", 300);
@@ -87,10 +87,10 @@ public class Configuration{
 		getRelay("lumiereYeux", "B15");
 		getRelay("diodesBuste", "B17");
 		/*##### pins bras gauche #####*/
-		getRelay("brasFrontalG-lever", "A18", 200);
-		getRelay("brasFrontalG-baisser", "A17",150);
-		getRelay("brasLateralG-ecarter", "A16");
-		getRelay("brasLateralG-ramener", "A15");
+		getRelay("brasFrontalG-lever", "A18", 3000);
+		getRelay("brasFrontalG-baisser", "A17",2000);
+		getRelay("brasLateralG-ecarter", "A16", 100);
+		getRelay("brasLateralG-ramener", "A15", 100);
 		getRelay("avantBrasG-lever", "A14", 4000);
 		getRelay("avantBrasG-baisser", "A13", 4000);
 		getRelay("mainG-fermer", "A12", 500);
@@ -98,10 +98,10 @@ public class Configuration{
 		getRelay("poignetG-exterieur", "B24", 200);
 		getRelay("poignetG-interieur", "B23", 200);
 		/*##### pins bras droit #####*/
-		getRelay("brasFrontalD-lever", "A28", 200);
-		getRelay("brasFrontalD-baisser", "A27", 150);
-		getRelay("brasLateralD-ecarter", "A26");
-		getRelay("brasLateralD-ramener", "A25");
+		getRelay("brasFrontalD-lever", "A28", 2500);
+		getRelay("brasFrontalD-baisser", "A27", 1750);
+		getRelay("brasLateralD-ecarter", "A26", 100);
+		getRelay("brasLateralD-ramener", "A25", 100);
 		getRelay("avantBrasD-lever", "A24", 4000);
 		getRelay("avantBrasD-baisser", "A23", 4000);
 		getRelay("mainD-fermer", "A22", 500);

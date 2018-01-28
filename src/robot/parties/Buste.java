@@ -59,10 +59,6 @@ public class Buste{
         System.out.println(Math.abs(value - position));
         relay.enableRelayFor(D);// le delai est ici calculé en fonction de la durée D d'un pas de rotation et de la longueur du trajet.
         position = value;
-        try {
-        	TimeUnit.MILLISECONDS.sleep(D);
-        }
-        catch(Exception e){}
 	}
 
 	

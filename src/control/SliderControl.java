@@ -30,14 +30,12 @@ public class SliderControl implements ChangeListener{
 			}
 			case "bras gauche":
 			{
-				if (value==0)robot.getBrasGauche().baisser();
-				if (value==1)robot.getBrasGauche().lever();
+				robot.getBrasGauche().getEpaule().lever_baisser(value);
 				break;
 			}
 			case "bras droit":
 			{
-				if (value==0)robot.getBrasDroit().baisser();
-				if (value==1)robot.getBrasDroit().lever();
+				robot.getBrasDroit().getEpaule().lever_baisser(value);
 				break;
 			}
 			case "buste":

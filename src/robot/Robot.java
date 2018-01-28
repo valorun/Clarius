@@ -166,11 +166,11 @@ public class Robot{
 	public void redresser(){
 		try{
 			Sequence seq=new Sequence();
-			seq.addRelay( chassis.getHaut() , 8);
-			seq.addRelay( "x", 1);
-			seq.addRelay( buste.getAvant(), 6);
-			seq.addRelay( "x", 1);
-			seq.addRelay( jambes.getHaut(), 8);
+			seq.addRelay( chassis.getHaut() , chassis.getHaut().getTempo());
+			seq.addRelay( "x", 100);
+			seq.addRelay( buste.getAvant(), buste.getAvant().getTempo());
+			seq.addRelay( "x", 100);
+			seq.addRelay( jambes.getHaut(), jambes.getHaut().getTempo());
 			seq.execute();
 			TimeUnit.MILLISECONDS.sleep(seq.getTimeTotal());
 		}

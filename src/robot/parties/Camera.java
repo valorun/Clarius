@@ -57,10 +57,6 @@ public class Camera{
         int D = relay.getTempo() * Math.abs(value - positionX);
         relay.enableRelayFor(D);// le delai est ici calculé en fonction de la durée D d'un pas de rotation et de la longueur du trajet.
         positionX = value;
-        try {
-        	TimeUnit.MILLISECONDS.sleep(D);
-        }
-        catch(InterruptedException e){}
 
 	}
 
@@ -71,10 +67,6 @@ public class Camera{
         int D = relay.getTempo() * Math.abs(value - positionY);
         relay.enableRelayFor(D);// le delai est ici calculé en fonction de la durée D d'un pas de rotation et de la longueur du trajet.
         positionY = value;
-        try {
-        	TimeUnit.MILLISECONDS.sleep(D);
-        }
-        catch(InterruptedException e){}
 
 	}
 
