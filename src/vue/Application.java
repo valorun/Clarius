@@ -239,9 +239,13 @@ public class Application extends JFrame{
 		eyesLightButton.setName("Lumière yeux");
 		lightButton.addActionListener(lightButtonControl);
 		eyesLightButton.addActionListener(lightButtonControl);
-
+		
+		JSlider paupieresSlider=new JSlider(JSlider.VERTICAL, 0, 1, 0);
+		constructSlider(paupieresSlider, "paupieres");
+		
 		miscPanel.add(lightButton);
 		miscPanel.add(eyesLightButton);
+		miscPanel.add(paupieresSlider);
 		miscPanel.setBorder(new TitledBorder(" Divers "));
 
 		//#####Ajout des parties au panel principal#####\\

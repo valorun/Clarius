@@ -26,7 +26,6 @@ public class Robot{
 	Camera camera;
 	Chariot chariot;
 	Relay eclairage;
-	Relay lumiereYeux;
 	Relay onOffCartes;
 
 	/**
@@ -43,7 +42,6 @@ public class Robot{
 	 */
 	private void createParts() {
 		eclairage=relaysMap.get("eclairage");
-		lumiereYeux=relaysMap.get("lumiereYeux");
 		onOffCartes=relaysMap.get("onOffCartes");
 		
 		Epaule epauleG=new Epaule((TemporizedRelay)relaysMap.get("brasFrontalG-lever"), (TemporizedRelay)relaysMap.get("brasFrontalG-baisser"), (TemporizedRelay)relaysMap.get("brasLateralG-ecarter"), (TemporizedRelay)relaysMap.get("brasLateralG-ramener"));
@@ -58,7 +56,7 @@ public class Robot{
 		Main mainD=new Main( (TemporizedRelay)relaysMap.get("mainD-fermer"), (TemporizedRelay)relaysMap.get("mainD-ouvrir"));
 		brasDroit=new Bras(epauleD,avBrasD,poignetD,mainD);
 
-		tete=new Tete((TemporizedRelay) relaysMap.get("tete-gauche"),(TemporizedRelay) relaysMap.get("tete-droite"));
+		tete=new Tete((TemporizedRelay) relaysMap.get("tete-gauche"),(TemporizedRelay) relaysMap.get("tete-droite"), relaysMap.get("lumiereYeux"), (TemporizedRelay)relaysMap.get("paupieres-ouvrir"), (TemporizedRelay)relaysMap.get("paupieres-fermer"));
 		jambes=new Jambes((TemporizedRelay)relaysMap.get("jambes-haut"), (TemporizedRelay)relaysMap.get("jambes-bas"));
 		chassis=new Chassis((TemporizedRelay)relaysMap.get("chassis-haut"), (TemporizedRelay)relaysMap.get("chassis-bas"));
 		buste= new Buste((TemporizedRelay)relaysMap.get("busteIncli-avant"), (TemporizedRelay) relaysMap.get("busteIncli-arriere"), (TemporizedRelay) relaysMap.get("busteRota-gauche"), (TemporizedRelay) relaysMap.get("busteRota-droite"));
@@ -122,13 +120,6 @@ public class Robot{
 		return eclairage;
 	}
 	/**
-	 * Méthode permettant d'obtenir le relai d'allumage des yeux du robot.
-	 * @return Le relai d'allumage des yeux du robot.
-	 */
-	public Relay getLumiereYeux(){
-		return lumiereYeux;
-	}
-	/**
 	 * Méthode permettant d'obtenir le le relai d'allumage du robot.
 	 * @return Le relai d'allumage du robot.
 	 */
@@ -154,7 +145,7 @@ public class Robot{
 		else if(robotOn==true){
 			onOffCartes.enableRelay(0);//extinction de l'alimentation par défaut
 			eclairage.enableRelay(0);//extinction de l'éclairage par défaut
-			lumiereYeux.enableRelay(0);//extinction des lumières des yeux par défaut
+			getTete().getLumiereYeux().enableRelay(0);//extinction des lumières des yeux par défaut
 			robotOn = false;
 		}
 

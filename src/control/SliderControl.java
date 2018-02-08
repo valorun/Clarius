@@ -57,7 +57,11 @@ public class SliderControl implements ChangeListener{
 			{
 				robot.getTete().tourner(value);
 				break;
-			}	
+			}
+			case "paupieres":
+			{
+				robot.getTete().ouverturePaupieres(value);
+			}
 			}
 			source.setEnabled(true);
 			valeur=value;

@@ -18,7 +18,7 @@ public class LightButtonControl implements ActionListener {
 		JButton source = (JButton)e.getSource();
 		String name = source.getName();
 		if (name=="Lumière") robot.getEclairage().enableRelay();	
-		else if (name=="Lumière yeux")robot.getLumiereYeux().enableRelay();	
+		else if (name=="Lumière yeux")robot.getTete().getLumiereYeux().enableRelay();	
 		
 		if(source.getBackground()!=UIConst.RED)source.setBackground(UIConst.RED);
 		else if(source.getBackground()==UIConst.RED)source.setBackground(UIConst.GREEN);

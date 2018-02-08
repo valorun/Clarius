@@ -86,9 +86,11 @@ public class Configuration{
 		getRelay("eclairage", "6");
 		getRelay("lumiereYeux", "B15");
 		getRelay("diodesBuste", "B17");
+		getRelay("paupieres-fermer", "B13", 600);
+		getRelay("paupieres-ouvrir", "B14", 600);
 		/*##### pins bras gauche #####*/
 		getRelay("brasFrontalG-lever", "A18", 3000);
-		getRelay("brasFrontalG-baisser", "A17",2000);
+		getRelay("brasFrontalG-baisser", "A17",1750);
 		getRelay("brasLateralG-ecarter", "A16", 100);
 		getRelay("brasLateralG-ramener", "A15", 100);
 		getRelay("avantBrasG-lever", "A14", 4000);
@@ -99,7 +101,7 @@ public class Configuration{
 		getRelay("poignetG-interieur", "B23", 200);
 		/*##### pins bras droit #####*/
 		getRelay("brasFrontalD-lever", "A28", 2500);
-		getRelay("brasFrontalD-baisser", "A27", 1750);
+		getRelay("brasFrontalD-baisser", "A27", 1500);
 		getRelay("brasLateralD-ecarter", "A26", 100);
 		getRelay("brasLateralD-ramener", "A25", 100);
 		getRelay("avantBrasD-lever", "A24", 4000);

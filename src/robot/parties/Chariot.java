@@ -11,16 +11,16 @@ public class Chariot{
         	move(-vitesse, -vitesse);
         }
         public void tournerGauche(int vitesse){
-        	move(0, (int)Math.round(0.5*vitesse));
+        	move(0, (int)Math.round(vitesse));
         }
         public void tournerDroite(int vitesse){
-        	move((int)Math.round(0.5*vitesse), 0);
+        	move((int)Math.round(vitesse), 0);
         }
         public void tournerArriereGauche(int vitesse){
-        	move(0, -(int)Math.round(0.5*vitesse));
+        	move(0, -(int)Math.round(vitesse));
         }
         public void tournerArriereDroite(int vitesse){
-        	move(-(int)Math.round(0.5*vitesse), 0);
+        	move(-(int)Math.round(vitesse), 0);
         }
         public void stop(){
         	move(0, 0);

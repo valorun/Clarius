@@ -19,7 +19,7 @@ function getPairPin {
         #Puis on récupère que les infos ne correspondant pas au relai donné en ragument.
         #Et enfin, on récupère seulement la partie affichant le pin du relai paire
         pairPin=$(grep -w "$(getParity $1)" config.txt | grep -vw "$1" | grep ".pin" | cut -d "=" -f 2)
-        pairPinCount=$(printf $pairPin | wc -l)
+        pairPinCount=$(echo -n $pairPin | grep -c '^')
         if [ $pairPinCount -eq 0 ] #On vérifie si le relay indiqué est bien appairé
         then
             echo "none"
