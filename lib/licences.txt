@@ -1,4 +1,0 @@
-jsch: BSD
-vlc: GPL v3
-slf4: MIT
-jna: LGPL 2.1
