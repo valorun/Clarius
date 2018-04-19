@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<class-diagram version="1.2.2" icons="true" always-add-relationships="false" generalizations="true" realizations="true" 
-  associations="true" dependencies="false" nesting-relationships="true" router="FAN">  
+<class-diagram version="1.2.2" icons="true" automaticImage="PNG" always-add-relationships="false" generalizations="true" 
+  realizations="true" associations="true" dependencies="false" nesting-relationships="true" router="FAN">  
   <class id="1" language="java" name="robot.parties.Chariot" project="Clarius" 
     file="/Clarius/src/robot/parties/Chariot.java" binary="false" corner="BOTTOM_RIGHT">    
-    <position height="-1" width="-1" x="718" y="-212"/>    
+    <position height="225" width="175" x="41" y="428"/>    
     <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
       sort-features="false" accessors="true" visibility="true">      
       <attributes public="true" package="true" protected="true" private="true" static="true"/>      
@@ -12,7 +12,7 @@
   </class>  
   <class id="2" language="java" name="robot.Robot" project="Clarius" file="/Clarius/src/robot/Robot.java" binary="false" 
     corner="BOTTOM_RIGHT">    
-    <position height="-1" width="-1" x="720" y="151"/>    
+    <position height="351" width="177" x="1239" y="37"/>    
     <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
       sort-features="false" accessors="true" visibility="true">      
       <attributes public="true" package="true" protected="true" private="true" static="true"/>      
@@ -21,7 +21,7 @@
   </class>  
   <class id="3" language="java" name="robot.Sequence" project="Clarius" file="/Clarius/src/robot/Sequence.java" 
     binary="false" corner="BOTTOM_RIGHT">    
-    <position height="-1" width="-1" x="-570" y="141"/>    
+    <position height="189" width="146" x="547" y="37"/>    
     <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
       sort-features="false" accessors="true" visibility="true">      
       <attributes public="true" package="true" protected="true" private="true" static="true"/>      
@@ -30,7 +30,7 @@
   </class>  
   <class id="4" language="java" name="robot.Relay" project="Clarius" file="/Clarius/src/robot/Relay.java" binary="false" 
     corner="BOTTOM_RIGHT">    
-    <position height="297" width="169" x="-434" y="47"/>    
+    <position height="297" width="169" x="2227" y="428"/>    
     <display autosize="false" stereotype="true" package="true" initial-value="false" signature="true" 
       sort-features="false" accessors="true" visibility="true">      
       <attributes public="true" package="true" protected="true" private="true" static="true"/>      
@@ -39,7 +39,7 @@
   </class>  
   <class id="5" language="java" name="robot.Raspberry" project="Clarius" file="/Clarius/src/robot/Raspberry.java" 
     binary="false" corner="BOTTOM_RIGHT">    
-    <position height="-1" width="-1" x="23" y="-176"/>    
+    <position height="351" width="175" x="2436" y="428"/>    
     <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
       sort-features="false" accessors="true" visibility="true">      
       <attributes public="true" package="true" protected="true" private="true" static="true"/>      
@@ -48,7 +48,7 @@
   </class>  
   <class id="6" language="java" name="robot.TemporizedRelay" project="Clarius" 
     file="/Clarius/src/robot/TemporizedRelay.java" binary="false" corner="BOTTOM_RIGHT">    
-    <position height="406" width="323" x="-506" y="528"/>    
+    <position height="406" width="323" x="1239" y="819"/>    
     <display autosize="false" stereotype="true" package="true" initial-value="false" signature="true" 
       sort-features="false" accessors="true" visibility="true">      
       <attributes public="true" package="true" protected="true" private="true" static="true"/>      
@@ -57,7 +57,7 @@
   </class>  
   <class id="7" language="java" name="robot.Configuration" project="Clarius" 
     file="/Clarius/src/robot/Configuration.java" binary="false" corner="BOTTOM_RIGHT">    
-    <position height="-1" width="-1" x="-357" y="-181"/>    
+    <position height="333" width="220" x="2436" y="37"/>    
     <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
       sort-features="false" accessors="true" visibility="true">      
       <attributes public="true" package="true" protected="true" private="true" static="true"/>      
@@ -66,7 +66,7 @@
   </class>  
   <class id="8" language="java" name="robot.parties.Tete" project="Clarius" file="/Clarius/src/robot/parties/Tete.java" 
     binary="false" corner="BOTTOM_RIGHT">    
-    <position height="-1" width="-1" x="209" y="719"/>    
+    <position height="297" width="417" x="503" y="428"/>    
     <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
       sort-features="false" accessors="true" visibility="true">      
       <attributes public="true" package="true" protected="true" private="true" static="true"/>      
@@ -75,7 +75,7 @@
   </class>  
   <class id="9" language="java" name="robot.parties.Camera" project="Clarius" 
     file="/Clarius/src/robot/parties/Camera.java" binary="false" corner="BOTTOM_RIGHT">    
-    <position height="315" width="235" x="96" y="262"/>    
+    <position height="315" width="235" x="1675" y="428"/>    
     <display autosize="false" stereotype="true" package="true" initial-value="false" signature="true" 
       sort-features="false" accessors="true" visibility="true">      
       <attributes public="true" package="true" protected="true" private="true" static="true"/>      
@@ -84,7 +84,7 @@
   </class>  
   <class id="10" language="java" name="robot.parties.Jambes" project="Clarius" 
     file="/Clarius/src/robot/parties/Jambes.java" binary="false" corner="BOTTOM_RIGHT">    
-    <position height="-1" width="-1" x="226" y="1489"/>    
+    <position height="171" width="237" x="1950" y="428"/>    
     <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
       sort-features="false" accessors="true" visibility="true">      
       <attributes public="true" package="true" protected="true" private="true" static="true"/>      
@@ -93,7 +93,7 @@
   </class>  
   <class id="11" language="java" name="robot.parties.Bras" project="Clarius" file="/Clarius/src/robot/parties/Bras.java" 
     binary="false" corner="BOTTOM_RIGHT">    
-    <position height="-1" width="-1" x="843" y="997"/>    
+    <position height="225" width="207" x="256" y="428"/>    
     <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
       sort-features="false" accessors="true" visibility="true">      
       <attributes public="true" package="true" protected="true" private="true" static="true"/>      
@@ -102,7 +102,7 @@
   </class>  
   <class id="12" language="java" name="robot.parties.Chassis" project="Clarius" 
     file="/Clarius/src/robot/parties/Chassis.java" binary="false" corner="BOTTOM_RIGHT">    
-    <position height="-1" width="-1" x="226" y="1268"/>    
+    <position height="171" width="239" x="960" y="428"/>    
     <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
       sort-features="false" accessors="true" visibility="true">      
       <attributes public="true" package="true" protected="true" private="true" static="true"/>      
@@ -111,7 +111,7 @@
   </class>  
   <class id="13" language="java" name="robot.parties.Buste" project="Clarius" 
     file="/Clarius/src/robot/parties/Buste.java" binary="false" corner="BOTTOM_RIGHT">    
-    <position height="-1" width="-1" x="299" y="1004"/>    
+    <position height="297" width="396" x="1239" y="428"/>    
     <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
       sort-features="false" accessors="true" visibility="true">      
       <attributes public="true" package="true" protected="true" private="true" static="true"/>      
@@ -119,293 +119,391 @@
     </display>  
   </class>  
   <association id="14">    
-    <bendpoint x="-55" y="986"/>    
-    <end type="SOURCE" refId="13" navigable="false">      
-      <attribute id="15" name="gauche"/>      
-      <multiplicity id="16" minimum="0" maximum="1"/>    
+    <end type="SOURCE" refId="7" navigable="false">      
+      <attribute id="15" name="instance">        
+        <position height="0" width="0" x="0" y="0"/>      
+      </attribute>      
+      <multiplicity id="16" minimum="0" maximum="1">        
+        <position height="0" width="0" x="0" y="0"/>      
+      </multiplicity>    
     </end>    
-    <end type="TARGET" refId="6" navigable="true"/>    
+    <end type="TARGET" refId="7" navigable="true"/>    
     <display labels="true" multiplicity="true"/>  
   </association>  
   <association id="17">    
-    <bendpoint x="-139" y="1208"/>    
-    <end type="SOURCE" refId="12" navigable="false">      
-      <attribute id="18" name="bas"/>      
-      <multiplicity id="19" minimum="0" maximum="1"/>    
+    <end type="SOURCE" refId="9" navigable="false">      
+      <attribute id="18" name="bas">        
+        <position height="0" width="0" x="0" y="0"/>      
+      </attribute>      
+      <multiplicity id="19" minimum="0" maximum="1">        
+        <position height="0" width="0" x="0" y="0"/>      
+      </multiplicity>    
     </end>    
     <end type="TARGET" refId="6" navigable="true"/>    
     <display labels="true" multiplicity="true"/>  
   </association>  
   <association id="20">    
-    <bendpoint x="-207" y="479"/>    
-    <end type="SOURCE" refId="9" navigable="false">      
-      <attribute id="21" name="gauche"/>      
-      <multiplicity id="22" minimum="0" maximum="1"/>    
-    </end>    
-    <end type="TARGET" refId="6" navigable="true"/>    
-    <display labels="true" multiplicity="true"/>  
-  </association>  
-  <association id="23">    
-    <bendpoint x="659" y="1233"/>    
-    <end type="SOURCE" refId="2" navigable="false">      
-      <attribute id="24" name="jambes"/>      
-      <multiplicity id="25" minimum="0" maximum="1"/>    
-    </end>    
-    <end type="TARGET" refId="10" navigable="true"/>    
-    <display labels="true" multiplicity="true"/>  
-  </association>  
-  <association id="26">    
+    <bendpoint x="2569" y="398"/>    
     <end type="SOURCE" refId="7" navigable="false">      
-      <attribute id="27" name="rasPiCam"/>      
-      <multiplicity id="28" minimum="0" maximum="1"/>    
-    </end>    
-    <end type="TARGET" refId="5" navigable="true"/>    
-    <display labels="true" multiplicity="true"/>  
-  </association>  
-  <association id="29">    
-    <bendpoint x="-236" y="1289"/>    
-    <bendpoint x="-287" y="1033"/>    
-    <end type="SOURCE" refId="12" navigable="false">      
-      <attribute id="30" name="haut"/>      
-      <multiplicity id="31" minimum="0" maximum="1"/>    
-    </end>    
-    <end type="TARGET" refId="6" navigable="true"/>    
-    <display labels="true" multiplicity="true"/>  
-  </association>  
-  <association id="32">    
-    <bendpoint x="-35" y="525"/>    
-    <end type="SOURCE" refId="9" navigable="false">      
-      <attribute id="33" name="haut"/>      
-      <multiplicity id="34" minimum="0" maximum="1"/>    
-    </end>    
-    <end type="TARGET" refId="6" navigable="true"/>    
-    <display labels="true" multiplicity="true"/>  
-  </association>  
-  <association id="35">    
-    <bendpoint x="-63" y="1064"/>    
-    <end type="SOURCE" refId="13" navigable="false">      
-      <attribute id="36" name="droite"/>      
-      <multiplicity id="37" minimum="0" maximum="1"/>    
-    </end>    
-    <end type="TARGET" refId="6" navigable="true"/>    
-    <display labels="true" multiplicity="true"/>  
-  </association>  
-  <association id="38">    
-    <bendpoint x="-248" y="-256"/>    
-    <bendpoint x="-64" y="-260"/>    
-    <end type="SOURCE" refId="7" navigable="false">      
-      <attribute id="39" name="rasPiChar">        
-        <position height="18" width="57" x="-128" y="-288"/>      
+      <attribute id="21" name="rasPiCam">        
+        <position height="0" width="0" x="0" y="0"/>      
       </attribute>      
-      <multiplicity id="40" minimum="0" maximum="1">        
-        <position height="16" width="23" x="-92" y="-253"/>      
+      <multiplicity id="22" minimum="0" maximum="1">        
+        <position height="0" width="0" x="0" y="0"/>      
       </multiplicity>    
     </end>    
     <end type="TARGET" refId="5" navigable="true"/>    
     <display labels="true" multiplicity="true"/>  
   </association>  
-  <association id="41">    
-    <bendpoint x="486" y="480"/>    
-    <end type="SOURCE" refId="2" navigable="false">      
-      <attribute id="42" name="tete"/>      
-      <multiplicity id="43" minimum="0" maximum="1"/>    
-    </end>    
-    <end type="TARGET" refId="8" navigable="true"/>    
-    <display labels="true" multiplicity="true"/>  
-  </association>  
-  <association id="44">    
-    <bendpoint x="-115" y="519"/>    
-    <end type="SOURCE" refId="9" navigable="false">      
-      <attribute id="45" name="droite"/>      
-      <multiplicity id="46" minimum="0" maximum="1"/>    
-    </end>    
-    <end type="TARGET" refId="6" navigable="true"/>    
-    <display labels="true" multiplicity="true"/>  
-  </association>  
-  <association id="47">    
-    <bendpoint x="405" y="233"/>    
-    <bendpoint x="-238" y="262"/>    
-    <end type="SOURCE" refId="2" navigable="false">      
-      <attribute id="48" name="lumiereYeux"/>      
-      <multiplicity id="49" minimum="0" maximum="1"/>    
-    </end>    
-    <end type="TARGET" refId="4" navigable="true"/>    
-    <display labels="true" multiplicity="true"/>  
-  </association>  
-  <association id="50">    
-    <bendpoint x="-45" y="778"/>    
-    <end type="SOURCE" refId="8" navigable="false">      
-      <attribute id="51" name="gauche"/>      
-      <multiplicity id="52" minimum="0" maximum="1"/>    
-    </end>    
-    <end type="TARGET" refId="6" navigable="true"/>    
-    <display labels="true" multiplicity="true"/>  
-  </association>  
-  <association id="53">    
-    <bendpoint x="190" y="63"/>    
-    <bendpoint x="-235" y="79"/>    
-    <end type="SOURCE" refId="2" navigable="false">      
-      <attribute id="54" name="onOffCartes"/>      
-      <multiplicity id="55" minimum="0" maximum="1"/>    
-    </end>    
-    <end type="TARGET" refId="4" navigable="true"/>    
-    <display labels="true" multiplicity="true"/>  
-  </association>  
-  <association id="56">    
-    <end type="SOURCE" refId="8" navigable="false">      
-      <attribute id="57" name="droite"/>      
-      <multiplicity id="58" minimum="0" maximum="1"/>    
-    </end>    
-    <end type="TARGET" refId="6" navigable="true"/>    
-    <display labels="true" multiplicity="true"/>  
-  </association>  
-  <association id="59">    
-    <bendpoint x="-157" y="497"/>    
-    <end type="SOURCE" refId="9" navigable="false">      
-      <attribute id="60" name="bas"/>      
-      <multiplicity id="61" minimum="0" maximum="1"/>    
-    </end>    
-    <end type="TARGET" refId="6" navigable="true"/>    
-    <display labels="true" multiplicity="true"/>  
-  </association>  
-  <association id="62">    
-    <end type="SOURCE" refId="2" navigable="false">      
-      <attribute id="63" name="camera"/>      
-      <multiplicity id="64" minimum="0" maximum="1"/>    
-    </end>    
-    <end type="TARGET" refId="9" navigable="true"/>    
-    <display labels="true" multiplicity="true"/>  
-  </association>  
-  <association id="65">    
-    <bendpoint x="-13" y="938"/>    
-    <end type="SOURCE" refId="13" navigable="false">      
-      <attribute id="66" name="arriere"/>      
-      <multiplicity id="67" minimum="0" maximum="1"/>    
-    </end>    
-    <end type="TARGET" refId="6" navigable="true"/>    
-    <display labels="true" multiplicity="true"/>  
-  </association>  
-  <association id="68">    
-    <end type="SOURCE" refId="2" navigable="false">      
-      <attribute id="69" name="brasDroit"/>      
-      <multiplicity id="70" minimum="0" maximum="1"/>    
-    </end>    
-    <end type="TARGET" refId="11" navigable="true"/>    
-    <display labels="true" multiplicity="true"/>  
-  </association>  
-  <association id="71">    
-    <end type="SOURCE" refId="2" navigable="false">      
-      <attribute id="72" name="brasGauche"/>      
-      <multiplicity id="73" minimum="0" maximum="1"/>    
-    </end>    
-    <end type="TARGET" refId="11" navigable="true"/>    
-    <display labels="true" multiplicity="true"/>  
-  </association>  
-  <association id="74">    
+  <association id="23">    
+    <bendpoint x="2595" y="397"/>    
     <end type="SOURCE" refId="7" navigable="false">      
-      <attribute id="75" name="instance"/>      
-      <multiplicity id="76" minimum="0" maximum="1"/>    
-    </end>    
-    <end type="TARGET" refId="7" navigable="true"/>    
-    <display labels="true" multiplicity="true"/>  
-  </association>  
-  <association id="77">    
-    <bendpoint x="186" y="193"/>    
-    <end type="SOURCE" refId="2" navigable="false">      
-      <attribute id="78" name="eclairage"/>      
-      <multiplicity id="79" minimum="0" maximum="1"/>    
-    </end>    
-    <end type="TARGET" refId="4" navigable="true"/>    
-    <display labels="true" multiplicity="true"/>  
-  </association>  
-  <association id="80">    
-    <bendpoint x="561" y="1170"/>    
-    <end type="SOURCE" refId="2" navigable="false">      
-      <attribute id="81" name="chassis"/>      
-      <multiplicity id="82" minimum="0" maximum="1"/>    
-    </end>    
-    <end type="TARGET" refId="12" navigable="true"/>    
-    <display labels="true" multiplicity="true"/>  
-  </association>  
-  <association id="83">    
-    <end type="SOURCE" refId="13" navigable="false">      
-      <attribute id="84" name="avant"/>      
-      <multiplicity id="85" minimum="0" maximum="1"/>    
-    </end>    
-    <end type="TARGET" refId="6" navigable="true"/>    
-    <display labels="true" multiplicity="true"/>  
-  </association>  
-  <association id="86">    
-    <bendpoint x="-450" y="1391"/>    
-    <bendpoint x="-443" y="963"/>    
-    <end type="SOURCE" refId="10" navigable="false">      
-      <attribute id="87" name="bas"/>      
-      <multiplicity id="88" minimum="0" maximum="1"/>    
-    </end>    
-    <end type="TARGET" refId="6" navigable="true"/>    
-    <display labels="true" multiplicity="true"/>  
-  </association>  
-  <association id="89">    
-    <bendpoint x="-373" y="1350"/>    
-    <bendpoint x="-384" y="997"/>    
-    <end type="SOURCE" refId="10" navigable="false">      
-      <attribute id="90" name="haut"/>      
-      <multiplicity id="91" minimum="0" maximum="1"/>    
-    </end>    
-    <end type="TARGET" refId="6" navigable="true"/>    
-    <display labels="true" multiplicity="true"/>  
-  </association>  
-  <association id="92">    
-    <end type="SOURCE" refId="2" navigable="false">      
-      <attribute id="93" name="chariot"/>      
-      <multiplicity id="94" minimum="0" maximum="1"/>    
-    </end>    
-    <end type="TARGET" refId="1" navigable="true"/>    
-    <display labels="true" multiplicity="true"/>  
-  </association>  
-  <association id="95">    
-    <bendpoint x="201" y="128"/>    
-    <bendpoint x="-219" y="136"/>    
-    <end type="SOURCE" refId="2" navigable="false">      
-      <attribute id="96" name="relaysMap"/>      
-      <multiplicity id="97" minimum="0" maximum="2147483647"/>    
-    </end>    
-    <end type="TARGET" refId="4" navigable="true"/>    
-    <display labels="true" multiplicity="true"/>  
-  </association>  
-  <association id="98">    
-    <bendpoint x="-248" y="-114"/>    
-    <bendpoint x="-158" y="-113"/>    
-    <bendpoint x="-68" y="-124"/>    
-    <end type="SOURCE" refId="7" navigable="false">      
-      <attribute id="99" name="rasPiCorps">        
+      <attribute id="24" name="rasPiCorps">        
         <position height="18" width="63" x="-131" y="-148"/>      
       </attribute>      
-      <multiplicity id="100" minimum="0" maximum="1">        
+      <multiplicity id="25" minimum="0" maximum="1">        
         <position height="16" width="23" x="-96" y="-113"/>      
       </multiplicity>    
     </end>    
     <end type="TARGET" refId="5" navigable="true"/>    
     <display labels="true" multiplicity="true"/>  
   </association>  
-  <association id="101">    
+  <association id="26">    
+    <bendpoint x="1941" y="910"/>    
+    <end type="SOURCE" refId="10" navigable="false">      
+      <attribute id="27" name="haut">        
+        <position height="0" width="0" x="0" y="0"/>      
+      </attribute>      
+      <multiplicity id="28" minimum="0" maximum="1">        
+        <position height="0" width="0" x="0" y="0"/>      
+      </multiplicity>    
+    </end>    
+    <end type="TARGET" refId="6" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <association id="29">    
+    <end type="SOURCE" refId="12" navigable="false">      
+      <attribute id="30" name="bas">        
+        <position height="0" width="0" x="0" y="0"/>      
+      </attribute>      
+      <multiplicity id="31" minimum="0" maximum="1">        
+        <position height="0" width="0" x="0" y="0"/>      
+      </multiplicity>    
+    </end>    
+    <end type="TARGET" refId="6" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <association id="32">    
+    <bendpoint x="1907" y="369"/>    
     <end type="SOURCE" refId="2" navigable="false">      
-      <attribute id="102" name="buste"/>      
-      <multiplicity id="103" minimum="0" maximum="1"/>    
+      <attribute id="33" name="jambes">        
+        <position height="0" width="0" x="0" y="0"/>      
+      </attribute>      
+      <multiplicity id="34" minimum="0" maximum="1">        
+        <position height="0" width="0" x="0" y="0"/>      
+      </multiplicity>    
+    </end>    
+    <end type="TARGET" refId="10" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <association id="35">    
+    <bendpoint x="2328" y="347"/>    
+    <end type="SOURCE" refId="2" navigable="false">      
+      <attribute id="36" name="relaysMap">        
+        <position height="18" width="58" x="2290" y="384"/>      
+      </attribute>      
+      <multiplicity id="37" minimum="0" maximum="2147483647">        
+        <position height="0" width="0" x="0" y="0"/>      
+      </multiplicity>    
+    </end>    
+    <end type="TARGET" refId="4" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <association id="38">    
+    <end type="SOURCE" refId="2" navigable="false">      
+      <attribute id="39" name="buste">        
+        <position height="0" width="0" x="-38" y="16"/>      
+      </attribute>      
+      <multiplicity id="40" minimum="0" maximum="1">        
+        <position height="0" width="0" x="-38" y="16"/>      
+      </multiplicity>    
     </end>    
     <end type="TARGET" refId="13" navigable="true"/>    
     <display labels="true" multiplicity="true"/>  
   </association>  
-  <generalization id="104">    
+  <association id="41">    
+    <end type="SOURCE" refId="7" navigable="false">      
+      <attribute id="42" name="relaysMap">        
+        <position height="0" width="0" x="0" y="0"/>      
+      </attribute>      
+      <multiplicity id="43" minimum="0" maximum="2147483647">        
+        <position height="0" width="0" x="0" y="0"/>      
+      </multiplicity>    
+    </end>    
+    <end type="TARGET" refId="4" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <association id="44">    
+    <bendpoint x="1008" y="353"/>    
+    <end type="SOURCE" refId="2" navigable="false">      
+      <attribute id="45" name="tete">        
+        <position height="0" width="0" x="35" y="-9"/>      
+      </attribute>      
+      <multiplicity id="46" minimum="0" maximum="1">        
+        <position height="0" width="0" x="35" y="-9"/>      
+      </multiplicity>    
+    </end>    
+    <end type="TARGET" refId="8" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <association id="47">    
+    <bendpoint x="1858" y="858"/>    
+    <end type="SOURCE" refId="10" navigable="false">      
+      <attribute id="48" name="bas">        
+        <position height="0" width="0" x="0" y="0"/>      
+      </attribute>      
+      <multiplicity id="49" minimum="0" maximum="1">        
+        <position height="0" width="0" x="0" y="0"/>      
+      </multiplicity>    
+    </end>    
+    <end type="TARGET" refId="6" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <association id="50">    
+    <bendpoint x="290" y="320"/>    
+    <end type="SOURCE" refId="2" navigable="false">      
+      <attribute id="51" name="chariot">        
+        <position height="0" width="0" x="0" y="0"/>      
+      </attribute>      
+      <multiplicity id="52" minimum="0" maximum="1">        
+        <position height="0" width="0" x="0" y="0"/>      
+      </multiplicity>    
+    </end>    
+    <end type="TARGET" refId="1" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <association id="53">    
+    <bendpoint x="2495" y="393"/>    
+    <end type="SOURCE" refId="7" navigable="false">      
+      <attribute id="54" name="rasPiChar">        
+        <position height="18" width="57" x="-128" y="-288"/>      
+      </attribute>      
+      <multiplicity id="55" minimum="0" maximum="1">        
+        <position height="16" width="23" x="-92" y="-253"/>      
+      </multiplicity>    
+    </end>    
+    <end type="TARGET" refId="5" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <association id="56">    
+    <bendpoint x="1426" y="773"/>    
+    <end type="SOURCE" refId="13" navigable="false">      
+      <attribute id="57" name="avant">        
+        <position height="18" width="37" x="1398" y="781"/>      
+      </attribute>      
+      <multiplicity id="58" minimum="0" maximum="1">        
+        <position height="16" width="23" x="1427" y="801"/>      
+      </multiplicity>    
+    </end>    
+    <end type="TARGET" refId="6" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <association id="59">    
+    <bendpoint x="1324" y="773"/>    
+    <end type="SOURCE" refId="13" navigable="false">      
+      <attribute id="60" name="gauche">        
+        <position height="18" width="46" x="1296" y="784"/>      
+      </attribute>      
+      <multiplicity id="61" minimum="0" maximum="1">        
+        <position height="16" width="23" x="1342" y="803"/>      
+      </multiplicity>    
+    </end>    
+    <end type="TARGET" refId="6" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <association id="62">    
+    <bendpoint x="1148" y="740"/>    
+    <end type="SOURCE" refId="12" navigable="false">      
+      <attribute id="63" name="haut">        
+        <position height="0" width="0" x="0" y="0"/>      
+      </attribute>      
+      <multiplicity id="64" minimum="0" maximum="1">        
+        <position height="0" width="0" x="0" y="0"/>      
+      </multiplicity>    
+    </end>    
+    <end type="TARGET" refId="6" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <association id="65">    
+    <bendpoint x="1690" y="818"/>    
+    <end type="SOURCE" refId="9" navigable="false">      
+      <attribute id="66" name="droite">        
+        <position height="0" width="0" x="0" y="0"/>      
+      </attribute>      
+      <multiplicity id="67" minimum="0" maximum="1">        
+        <position height="0" width="0" x="0" y="0"/>      
+      </multiplicity>    
+    </end>    
+    <end type="TARGET" refId="6" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <association id="68">    
+    <bendpoint x="1383" y="770"/>    
+    <end type="SOURCE" refId="13" navigable="false">      
+      <attribute id="69" name="arriere">        
+        <position height="18" width="42" x="1348" y="782"/>      
+      </attribute>      
+      <multiplicity id="70" minimum="0" maximum="1">        
+        <position height="16" width="23" x="1389" y="802"/>      
+      </multiplicity>    
+    </end>    
+    <end type="TARGET" refId="6" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <association id="71">    
+    <bendpoint x="2206" y="403"/>    
+    <end type="SOURCE" refId="2" navigable="false">      
+      <attribute id="72" name="eclairage">        
+        <position height="0" width="0" x="0" y="0"/>      
+      </attribute>      
+      <multiplicity id="73" minimum="0" maximum="1">        
+        <position height="16" width="23" x="2194" y="420"/>      
+      </multiplicity>    
+    </end>    
+    <end type="TARGET" refId="4" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <association id="74">    
+    <bendpoint x="1639" y="808"/>    
+    <end type="SOURCE" refId="9" navigable="false">      
+      <attribute id="75" name="gauche">        
+        <position height="0" width="0" x="0" y="0"/>      
+      </attribute>      
+      <multiplicity id="76" minimum="0" maximum="1">        
+        <position height="0" width="0" x="0" y="0"/>      
+      </multiplicity>    
+    </end>    
+    <end type="TARGET" refId="6" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <association id="77">    
+    <bendpoint x="1624" y="375"/>    
+    <end type="SOURCE" refId="2" navigable="false">      
+      <attribute id="78" name="camera">        
+        <position height="0" width="0" x="-12" y="-50"/>      
+      </attribute>      
+      <multiplicity id="79" minimum="0" maximum="1">        
+        <position height="0" width="0" x="-12" y="-50"/>      
+      </multiplicity>    
+    </end>    
+    <end type="TARGET" refId="9" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <association id="80">    
+    <bendpoint x="2262" y="375"/>    
+    <end type="SOURCE" refId="2" navigable="false">      
+      <attribute id="81" name="onOffCartes">        
+        <position height="18" width="70" x="2205" y="383"/>      
+      </attribute>      
+      <multiplicity id="82" minimum="0" maximum="1">        
+        <position height="0" width="0" x="0" y="0"/>      
+      </multiplicity>    
+    </end>    
+    <end type="TARGET" refId="4" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <generalization id="83">    
+    <bendpoint x="1982" y="990"/>    
     <end type="SOURCE" refId="6"/>    
     <end type="TARGET" refId="4"/>  
   </generalization>  
-  <association id="105">    
-    <end type="SOURCE" refId="7" navigable="false">      
-      <attribute id="106" name="relaysMap"/>      
-      <multiplicity id="107" minimum="0" maximum="2147483647"/>    
+  <association id="84">    
+    <bendpoint x="1029" y="875"/>    
+    <end type="SOURCE" refId="8" navigable="false">      
+      <attribute id="85" name="gauche">        
+        <position height="0" width="0" x="0" y="0"/>      
+      </attribute>      
+      <multiplicity id="86" minimum="0" maximum="1">        
+        <position height="0" width="0" x="0" y="0"/>      
+      </multiplicity>    
     </end>    
-    <end type="TARGET" refId="4" navigable="true"/>    
+    <end type="TARGET" refId="6" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <association id="87">    
+    <end type="SOURCE" refId="2" navigable="false">      
+      <attribute id="88" name="chassis">        
+        <position height="0" width="0" x="0" y="0"/>      
+      </attribute>      
+      <multiplicity id="89" minimum="0" maximum="1">        
+        <position height="0" width="0" x="0" y="0"/>      
+      </multiplicity>    
+    </end>    
+    <end type="TARGET" refId="12" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <association id="90">    
+    <bendpoint x="491" y="354"/>    
+    <end type="SOURCE" refId="2" navigable="false">      
+      <attribute id="91" name="brasDroit">        
+        <position height="0" width="0" x="0" y="0"/>      
+      </attribute>      
+      <multiplicity id="92" minimum="0" maximum="1">        
+        <position height="0" width="0" x="0" y="0"/>      
+      </multiplicity>    
+    </end>    
+    <end type="TARGET" refId="11" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <association id="93">    
+    <bendpoint x="1582" y="761"/>    
+    <end type="SOURCE" refId="9" navigable="false">      
+      <attribute id="94" name="haut">        
+        <position height="0" width="0" x="0" y="0"/>      
+      </attribute>      
+      <multiplicity id="95" minimum="0" maximum="1">        
+        <position height="0" width="0" x="0" y="0"/>      
+      </multiplicity>    
+    </end>    
+    <end type="TARGET" refId="6" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <association id="96">    
+    <bendpoint x="1489" y="772"/>    
+    <end type="SOURCE" refId="13" navigable="false">      
+      <attribute id="97" name="droite">        
+        <position height="18" width="37" x="1440" y="779"/>      
+      </attribute>      
+      <multiplicity id="98" minimum="0" maximum="1">        
+        <position height="16" width="23" x="1481" y="801"/>      
+      </multiplicity>    
+    </end>    
+    <end type="TARGET" refId="6" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <association id="99">    
+    <end type="SOURCE" refId="8" navigable="false">      
+      <attribute id="100" name="droite">        
+        <position height="0" width="0" x="0" y="0"/>      
+      </attribute>      
+      <multiplicity id="101" minimum="0" maximum="1">        
+        <position height="0" width="0" x="0" y="0"/>      
+      </multiplicity>    
+    </end>    
+    <end type="TARGET" refId="6" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <association id="102">    
+    <bendpoint x="516" y="383"/>    
+    <end type="SOURCE" refId="2" navigable="false">      
+      <attribute id="103" name="brasGauche">        
+        <position height="0" width="0" x="0" y="0"/>      
+      </attribute>      
+      <multiplicity id="104" minimum="0" maximum="1">        
+        <position height="0" width="0" x="0" y="0"/>      
+      </multiplicity>    
+    </end>    
+    <end type="TARGET" refId="11" navigable="true"/>    
     <display labels="true" multiplicity="true"/>  
   </association>  
   <classifier-display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
