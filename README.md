@@ -26,7 +26,8 @@ au lieu d'éxecuter le script manuellement à chaque fois, nous allons faire en 
     - (optionnel, si Yana est installé) Ajouter les droits d'execution à l'utilisateur "www-data" pour le fichier "sequenceYana.bash". Plusieurs méthodes existe, la plus simple employée ici consiste à ajouter la ligne 
     ```
     www-data ALL=(ALL) NOPASSWD:/bin/bash /home/pi/Scripts/sequenceYana.bash
-    ``` dans le fichier "/etc/sudoers". Ainsi, Yana pourra executer toutes les autres commandes associés aux mouvements (https://github.com/ldleman/yana4all-binaires).
+    ``` 
+    dans le fichier "/etc/sudoers". Ainsi, Yana pourra executer toutes les autres commandes associés aux mouvements (https://github.com/ldleman/yana4all-binaires).
     - Copiez le dossier "Scripts" vers le répertoire personnel (dans notre cas "/home/pi"). Il s'agit de tout les scripts permettant de controller les relais de chaques moteurs.
 - Raspberry camera
     - Effectuez les même modifications sur le fichier "/etc/ssh/sshd_config" que pour le raspberry précédent.
