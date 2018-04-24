@@ -17,7 +17,7 @@ Chaque raspberry a un dossier correspondant à son nom dans le dossier "Scripts"
     pour le rendre executable, on utilise la commande: ```chmod +x initialize_pins.sh```
 au lieu d'éxecuter le script manuellement à chaque fois, nous allons faire en sorte qu'il s'éxecute automatiquement au démarage du raspberry.Pour se faire, on copie le script vers le répertoire "/etc/init.d". On ajoute ensuite le script à la séquence de boot (2 méthodes): 
       1. lancer la commande ```sudo update-rc.d initialize_pins.sh defaults```
-      2. ajouter la ligne ```/etc/init.d/initialize_pins.sh || exit 1``` au fichier "/etc/rc.local", avant le "exit 0"
+      2. ajouter la ligne ```/etc/init.d/initialize_pins.sh``` au fichier "/etc/rc.local", avant le "exit 0"
     - (optionnel, si vous ne parvenez pas a vous connecter à votre raspberry à l'aide du programme) Ajoutez la ligne 
     ```
     KexAlgorithms curve25519-sha256@libssh.org,ecdh-sha2-nistp256,ecdh-sha2-nistp384,ecdh-sha2-nistp521,diffie-hellman-group-exchange-sha256,diffie-hellman-group14-sha1,diffie-hellman-group-exchange-sha1,diffie-hellman-group1-sha1
