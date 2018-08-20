@@ -1,7 +1,7 @@
 package robot;
 
 /**
-* Classe permettant d'instancier l'abstraction d'un relai. Cette classe fournit les méthodes nécessaires pour gérer allumer ou éteindre un relay situé sur le raspberry gérant le corps du robot.
+* Classe permettant d'instancier l'abstraction d'un relai. Cette classe fournit les méthodes nécessaires pour gérer, allumer ou éteindre un relay situé sur le raspberry gérant le corps du robot.
 * @author Ronan COLLIER
 *@version 1.0
 */
