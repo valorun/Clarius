@@ -139,7 +139,7 @@ public class Configuration{
 		return value;
 	}
 	/**
-	 * Méthode permettant de rechercher un relai dans le fichier de configuration, et de l'ajoute dans la liste des relais.
+	 * Méthode permettant de rechercher un relai dans le fichier de configuration, et de l'ajouter dans la liste des relais.
 	 * @param relayName le nom du relai désiré.
 	 * @param defaultPin le pin par défaut du relai si ce dernier n'est pas présent dans le fichier de configuration.
 	 */
