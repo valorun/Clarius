@@ -31,8 +31,8 @@ public class Raspberry{
 	/**
      * Constructeur de la classe raspberry.
      * @param ip représente l'ip attribuée au préalable au raspberry.
-     * @param username représente le nom d'utilisateur choisis pour se connecter au raspberry.
-     * @param password représente le mot de passe correspondant au compte utilisateur choisis pour se connecter.
+     * @param username représente le nom d'utilisateur choisi pour se connecter au raspberry.
+     * @param password représente le mot de passe correspondant au compte utilisateur choisi pour se connecter.
      */
 	public Raspberry(String ip, String username, String password) {
 		this.ip=ip;
@@ -82,8 +82,8 @@ public class Raspberry{
 		return this;
 	}
 	/**
-	 * Méthode vérifiant le status de la connection SSH.
-	 * @return True si nous sommes connecté au raspberry, False si ce n'est pas le cas.
+	 * Méthode vérifiant le statut de la connection SSH.
+	 * @return True si nous sommes connectés au raspberry, False si ce n'est pas le cas.
 	 */
 	public boolean checkConnection() {
 		if(channel!=null) return channel.isConnected();
@@ -104,7 +104,7 @@ public class Raspberry{
 		}
 	}
 	/**
-	 * Méthode permettant d'éteindre le raspberry a distance puis de fermer la liaison SSH avec celui ci.
+	 * Méthode permettant d'éteindre le raspberry à distance puis de fermer la liaison SSH avec celui-ci. 
 	 */
 	public void shutdown() {
 		try {
@@ -114,7 +114,7 @@ public class Raspberry{
 		catch(Exception e) {}
 	}
 	/**
-	 * Méthode permettant de redémarrer le raspberry a distance puis de fermer la liaison SSH avec celui ci.
+	 * Méthode permettant de redémarrer le raspberry à distance puis de fermer la liaison SSH avec celui-ci.
 	 */
 	public void restart() {
 		try {
