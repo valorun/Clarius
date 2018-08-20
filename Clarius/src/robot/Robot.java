@@ -152,7 +152,7 @@ public class Robot{
 	}
 	
 	/**
-	 * Méthode permettant d'éxecuter la séquence de redressage du robot.
+	 * Méthode permettant d'exécuter la séquence de redressage du robot.
 	 */
 	public void redresser(){
 		try{
@@ -168,7 +168,7 @@ public class Robot{
 		catch(InterruptedException e){}
 	}
 	/**
-	 * Méthode permettant d'éxecuter la séquence pour asseoir le robot.
+	 * Méthode permettant d'exécuter la séquence pour asseoir le robot.
 	 */
 	public void asseoir(){
 		try{
