@@ -8,7 +8,7 @@ import robot.parties.bras.Poignet;
 import java.util.HashMap;
 import java.util.concurrent.TimeUnit;
 /**
-* Classe permettant d'instancier l'abstraction du robot. Cette lasse fournit les méthodes pour obtenir chaques parties du robot, mais aussi lié chaques relais à un pin.
+* Classe permettant d'instancier l'abstraction du robot. Cette classe fournit les méthodes pour obtenir chaque partie du robot, mais aussi lier chaques relai à un pin.
 * @author Ronan COLLIER
 * @version 1.0
 */
@@ -30,7 +30,7 @@ public class Robot{
 
 	/**
      	* Constructeur de la classe Robot.
-     	* @param relaysMap représente la liste des pins du raspberry avec le nom du relais associés.
+     	* @param relaysMap représente la liste des pins du raspberry avec le nom du relai associé. 
      	*/
 	public Robot(HashMap<String, Relay> relaysMap){
 		robotOn=false;
@@ -38,7 +38,7 @@ public class Robot{
 		createParts();
 	}
 	/**
-	 * Méthode permettant d'instancier chaques parties du robot à partir de la hashmap
+	 * Méthode permettant d'instancier chaque partie du robot à partir de la hashmap. 
 	 */
 	private void createParts() {
 		eclairage=relaysMap.get("eclairage");
@@ -152,7 +152,7 @@ public class Robot{
 	}
 	
 	/**
-	 * Méthode permettant d'executer la séquence de redressage du robot.
+	 * Méthode permettant d'éxecuter la séquence de redressage du robot.
 	 */
 	public void redresser(){
 		try{
@@ -168,7 +168,7 @@ public class Robot{
 		catch(InterruptedException e){}
 	}
 	/**
-	 * Méthode permettant d'executer la séquence pour asseoir le robot.
+	 * Méthode permettant d'éxecuter la séquence pour asseoir le robot.
 	 */
 	public void asseoir(){
 		try{
