@@ -31,7 +31,7 @@ public class Configuration{
 		configFile=new File(System.getProperty("user.dir")+"/config.txt");
 		properties=new Properties();
 
-		if(!configFile.exists()){ //si le fichier de config n'existe pas, on en creer un par défaut
+		if(!configFile.exists()){ //si le fichier de config n'existe pas, on en créer un par défaut
 		}
 		try {
 			//charge le fichier de propriétés
@@ -125,9 +125,9 @@ public class Configuration{
 		return value;
 	}
 	/**
-	 * Méthode permettant de lire une propriété dans le fichier de configuration, et lui attribut une valeur si la propriété n'existe pas.
+	 * Méthode permettant de lire une propriété dans le fichier de configuration, et de lui attribuer une valeur si la propriété n'existe pas.
 	 * @param key la clé identifiant la propriété recherchée.
-	 * @param defaultVal la valeur par défaut assigné à la propriété si cette dernière n'existe pas.
+	 * @param defaultVal la valeur par défaut assignée à la propriété si cette dernière n'existe pas.
 	 * @return la valeur de la propriété.
 	 */
 	private String getProperty(String key, String defaultVal){
@@ -139,7 +139,7 @@ public class Configuration{
 		return value;
 	}
 	/**
-	 * Méthode permettant de rechercher un relai dans le fichier de configuration, et l'ajoute dans la liste des relais.
+	 * Méthode permettant de rechercher un relai dans le fichier de configuration, et de l'ajoute dans la liste des relais.
 	 * @param relayName le nom du relai désiré.
 	 * @param defaultPin le pin par défaut du relai si ce dernier n'est pas présent dans le fichier de configuration.
 	 */
@@ -148,7 +148,7 @@ public class Configuration{
 		relaysMap.put(relayName, relay);
 	}
 	/**
-	 * Méthode permettant de rechercher un relai temporisé dans le fichier de configuration, et l'ajoute dans la liste des relais.
+	 * Méthode permettant de rechercher un relai temporisé dans le fichier de configuration, et de l'ajouter dans la liste des relais.
 	 * @param relayName le nom du relai désiré.
 	 * @param defaultPin le pin par défaut du relai si le pin n'est pas présent dans le fichier de configuration.
 	 * @param defaultTempo la temporisation par défaut du relai si la tempo n'est pas présente dans le fichier de configuration.
