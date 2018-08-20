@@ -6,7 +6,7 @@ public class TemporizedRelay extends Relay{
      * Constructeur de la classe Relay
      * @param name représente le nom de l'action du relai correspondant au relay.
      * @param pin représente le numéro du pin correspondant au relay.
-     * @param tempo représente la temporisation la temporisation pour executer un pas de l'action du relay.
+     * @param tempo représente la temporisation pour exécuter un pas de l'action du relay.
      */
 	public TemporizedRelay(String name, String pin, int tempo){
 		super(name, pin);
@@ -14,7 +14,7 @@ public class TemporizedRelay extends Relay{
 	}
 
 	/**
-	 * Méthode permettant d'allumer un relai pour la temps qui lui est associé puis l'éteint.
+	 * Méthode permettant d'allumer un relai pour la temporisation qui lui est associée puis de l'éteindre.
 	 */
 	public void enableRelayFor()
 	{
@@ -22,14 +22,14 @@ public class TemporizedRelay extends Relay{
 	}
 	/**
 	 * Méthode permettant d'obtenir la temporisation associée au relai.
-	 * @return la temporisation associé au relai.
+	 * @return la temporisation associée au relai.
 	 */
 	public int getTempo() {
 		return tempo;
 	}
 	/**
 	 * Méthode permettant de modifier la temporisation associée au relai.
-	 * @param tempo la nouvelle temporisation associé au relai.
+	 * @param tempo la nouvelle temporisation associée au relai.
 	 */
 	public void setTempo(int tempo) {
 		this.tempo = tempo;
@@ -37,7 +37,7 @@ public class TemporizedRelay extends Relay{
 
 	/**
 	 * Méthode permettant d'obtenir les informations du relai sous forme de String.
-	 * @return le nom du relai et sa temporisation associé.
+	 * @return le nom du relai et sa temporisation associée.
 	 */
 	public String toString(){
 		return name+";"+tempo;
