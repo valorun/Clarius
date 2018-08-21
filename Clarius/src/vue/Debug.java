@@ -17,7 +17,7 @@ public class Debug extends JFrame{
 		GridBagConstraints gc = new GridBagConstraints();
 		gc.fill = GridBagConstraints.BOTH;//ordonne d'étirer les composants dans les deux sens quand ils le peuvent
 		gc.insets = new Insets(0,0,0,0);//marge entre les composants
-		gc.ipady = gc.anchor = GridBagConstraints.CENTER;//si les composants n'occuppent pas tout l'espace, ils sont placés au milieu
+		gc.ipady = gc.anchor = GridBagConstraints.CENTER;//si les composants n'occupent pas tout l'espace, ils sont placés au milieu
 		gc.weightx = 1;
 		gc.weighty = 1;
 		this.getContentPane().add(mainPanel);
@@ -53,7 +53,7 @@ public class Debug extends JFrame{
 		GridBagConstraints gc = new GridBagConstraints();
 		gc.fill = GridBagConstraints.BOTH;//ordonne d'étirer les composants dans les deux sens quand ils le peuvent
 		gc.insets = new Insets(0,0,0,0);//marge entre les composants
-		gc.ipady = gc.anchor = GridBagConstraints.CENTER;//si les composants n'occuppent pas tout l'espace, ils sont placés au milieu
+		gc.ipady = gc.anchor = GridBagConstraints.CENTER;//si les composants n'occupent pas tout l'espace, ils sont placés au milieu
 		gc.weightx = 1;
 		gc.weighty = 1;
 
@@ -87,7 +87,7 @@ public class Debug extends JFrame{
 		GridBagConstraints gc1 = new GridBagConstraints();
 		gc1.fill = GridBagConstraints.BOTH;//ordonne d'étirer les composants dans les deux sens quand ils le peuvent
 		gc1.insets = new Insets(0,0,0,0);//marge entre les composants
-		gc1.ipady = gc1.anchor = GridBagConstraints.CENTER;//si les composants n'occuppent pas tout l'espace, ils sont placés au milieu
+		gc1.ipady = gc1.anchor = GridBagConstraints.CENTER;//si les composants n'occupent pas tout l'espace, ils sont placés au milieu
 		gc1.weightx = 1;
 		gc1.weighty = 1;
 
@@ -131,7 +131,7 @@ public class Debug extends JFrame{
 		GridBagConstraints gc = new GridBagConstraints();
 		gc.fill = GridBagConstraints.BOTH;//ordonne d'étirer les composants dans les deux sens quand ils le peuvent
 		gc.insets = new Insets(0,0,0,0);//marge entre les composants
-		gc.ipady = gc.anchor = GridBagConstraints.CENTER;//si les composants n'occuppent pas tout l'espace, ils sont placés au milieu
+		gc.ipady = gc.anchor = GridBagConstraints.CENTER;//si les composants n'occupent pas tout l'espace, ils sont placés au milieu
 		gc.weightx = 1;
 		gc.weighty = 1;
 
@@ -160,7 +160,7 @@ public class Debug extends JFrame{
 		GridBagConstraints gc = new GridBagConstraints();
 		gc.fill = GridBagConstraints.BOTH;//ordonne d'étirer les composants dans les deux sens quand ils le peuvent
 		gc.insets = new Insets(0,0,0,0);//marge entre les composants
-		gc.ipady = gc.anchor = GridBagConstraints.CENTER;//si les composants n'occuppent pas tout l'espace, ils sont placés au milieu
+		gc.ipady = gc.anchor = GridBagConstraints.CENTER;//si les composants n'occupent pas tout l'espace, ils sont placés au milieu
 		gc.weightx = 1;
 		gc.weighty = 1;
 
@@ -188,7 +188,7 @@ public class Debug extends JFrame{
 		GridBagConstraints gc = new GridBagConstraints();
 		gc.fill = GridBagConstraints.BOTH;//ordonne d'étirer les composants dans les deux sens quand ils le peuvent
 		gc.insets = new Insets(0,0,0,0);//marge entre les composants
-		gc.ipady = gc.anchor = GridBagConstraints.CENTER;//si les composants n'occuppent pas tout l'espace, ils sont placés au milieu
+		gc.ipady = gc.anchor = GridBagConstraints.CENTER;//si les composants n'occupent pas tout l'espace, ils sont placés au milieu
 		gc.weightx = 1;
 		gc.weighty = 1;
 
@@ -233,7 +233,7 @@ public class Debug extends JFrame{
 		GridBagConstraints gc = new GridBagConstraints();
 		gc.fill = GridBagConstraints.BOTH;//ordonne d'étirer les composants dans les deux sens quand ils le peuvent
 		gc.insets = new Insets(0,0,0,0);//marge entre les composants
-		gc.ipady = gc.anchor = GridBagConstraints.CENTER;//si les composants n'occuppent pas tout l'espace, ils sont placés au milieu
+		gc.ipady = gc.anchor = GridBagConstraints.CENTER;//si les composants n'occupent pas tout l'espace, ils sont placés au milieu
 		gc.weightx = 1;
 		gc.weighty = 1;
 
@@ -259,7 +259,7 @@ public class Debug extends JFrame{
 		GridBagConstraints gc = new GridBagConstraints();
 		gc.fill = GridBagConstraints.BOTH;//ordonne d'étirer les composants dans les deux sens quand ils le peuvent
 		gc.insets = new Insets(0,0,0,0);//marge entre les composants
-		gc.ipady = gc.anchor = GridBagConstraints.CENTER;//si les composants n'occuppent pas tout l'espace, ils sont placés au milieu
+		gc.ipady = gc.anchor = GridBagConstraints.CENTER;//si les composants n'occupent pas tout l'espace, ils sont placés au milieu
 		gc.weightx = 1;
 		gc.weighty = 1;
 
@@ -287,7 +287,7 @@ public class Debug extends JFrame{
 		GridBagConstraints gc = new GridBagConstraints();
 		gc.fill = GridBagConstraints.BOTH;//ordonne d'étirer les composants dans les deux sens quand ils le peuvent
 		gc.insets = new Insets(0,0,0,0);//marge entre les composants
-		gc.ipady = gc.anchor = GridBagConstraints.CENTER;//si les composants n'occuppent pas tout l'espace, ils sont placés au milieu
+		gc.ipady = gc.anchor = GridBagConstraints.CENTER;//si les composants n'occupent pas tout l'espace, ils sont placés au milieu
 		gc.weightx = 1;
 		gc.weighty = 1;
 		
@@ -332,7 +332,7 @@ public class Debug extends JFrame{
 		GridBagConstraints gc = new GridBagConstraints();
 		gc.fill = GridBagConstraints.BOTH;//ordonne d'étirer les composants dans les deux sens quand ils le peuvent
 		gc.insets = new Insets(0,0,0,0);//marge entre les composants
-		gc.ipady = gc.anchor = GridBagConstraints.CENTER;//si les composants n'occuppent pas tout l'espace, ils sont placés au milieu
+		gc.ipady = gc.anchor = GridBagConstraints.CENTER;//si les composants n'occupent pas tout l'espace, ils sont placés au milieu
 		gc.weightx = 1;
 		gc.weighty = 1;
 		
@@ -364,7 +364,7 @@ public class Debug extends JFrame{
 		GridBagConstraints gc = new GridBagConstraints();
 		gc.fill = GridBagConstraints.BOTH;//ordonne d'étirer les composants dans les deux sens quand ils le peuvent
 		gc.insets = new Insets(0,0,0,0);//marge entre les composants
-		gc.ipady = gc.anchor = GridBagConstraints.CENTER;//si les composants n'occuppent pas tout l'espace, ils sont placés au milieu
+		gc.ipady = gc.anchor = GridBagConstraints.CENTER;//si les composants n'occupent pas tout l'espace, ils sont placés au milieu
 		gc.weightx = 1;
 		gc.weighty = 1;
 		
@@ -390,7 +390,7 @@ public class Debug extends JFrame{
 		GridBagConstraints gc = new GridBagConstraints();
 		gc.fill = GridBagConstraints.BOTH;//ordonne d'étirer les composants dans les deux sens quand ils le peuvent
 		gc.insets = new Insets(0,0,0,0);//marge entre les composants
-		gc.ipady = gc.anchor = GridBagConstraints.CENTER;//si les composants n'occuppent pas tout l'espace, ils sont placés au milieu
+		gc.ipady = gc.anchor = GridBagConstraints.CENTER;//si les composants n'occupent pas tout l'espace, ils sont placés au milieu
 		gc.weightx = 1;
 		gc.weighty = 1;
 		
@@ -420,7 +420,7 @@ public class Debug extends JFrame{
 		GridBagConstraints gc = new GridBagConstraints();
 		gc.fill = GridBagConstraints.BOTH;//ordonne d'étirer les composants dans les deux sens quand ils le peuvent
 		gc.insets = new Insets(0,0,0,0);//marge entre les composants
-		gc.ipady = gc.anchor = GridBagConstraints.CENTER;//si les composants n'occuppent pas tout l'espace, ils sont placés au milieu
+		gc.ipady = gc.anchor = GridBagConstraints.CENTER;//si les composants n'occupent pas tout l'espace, ils sont placés au milieu
 		gc.weightx = 1;
 		gc.weighty = 1;
 
@@ -447,7 +447,7 @@ public class Debug extends JFrame{
 		GridBagConstraints gc = new GridBagConstraints();
 		gc.fill = GridBagConstraints.BOTH;//ordonne d'étirer les composants dans les deux sens quand ils le peuvent
 		gc.insets = new Insets(0,0,0,0);//marge entre les composants
-		gc.ipady = gc.anchor = GridBagConstraints.CENTER;//si les composants n'occuppent pas tout l'espace, ils sont placés au milieu
+		gc.ipady = gc.anchor = GridBagConstraints.CENTER;//si les composants n'occupent pas tout l'espace, ils sont placés au milieu
 		gc.weightx = 1;
 		gc.weighty = 1;
 
