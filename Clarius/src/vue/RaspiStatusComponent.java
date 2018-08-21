@@ -23,7 +23,7 @@ public class RaspiStatusComponent extends JComponent{
 	boolean status;
 	/**
 	 * Constructeur de la classe RaspiStatusComponent.
-	 * @param raspberry qui représente le raspberry dont on veut verifier l'état.
+	 * @param raspberry qui représente le raspberry dont on veut vérifier l'état.
 	 */
 	public RaspiStatusComponent(Raspberry raspberry) {
 		super();
@@ -50,7 +50,7 @@ public class RaspiStatusComponent extends JComponent{
 		this.setVisible(true);
 	}
 	/**
-	 * Méthode permettant de mettre à jour l'icone de status en fonction de l'état du raspberry.
+	 * Méthode permettant de mettre à jour l'icône de statut en fonction de l'état du raspberry.
 	 */
 	public void updateState() {
 		try {
@@ -70,7 +70,7 @@ public class RaspiStatusComponent extends JComponent{
 
 	}
 	/**
-	 * Méthode permettant de dessiner l'icone de status d'allumage du raspberry.
+	 * Méthode permettant de dessiner l'icône de statut d'allumage du raspberry.
 	 */
 	public void paintComponent(Graphics g) {
 		super.paintComponent(g); //paint background
