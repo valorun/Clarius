@@ -25,14 +25,14 @@ public class MenuBar extends JMenuBar{
 		JMenuItem quitter = new JMenuItem("Quitter"); //quitte le programme
 
 		JMenu menu2 = new JMenu("Connexions");
-		shutdownCorps = new JMenuItem("Shutdown raspi corps"); //eteint le raspberry du corps
-		shutdownChar = new JMenuItem("Shutdown raspi chariot"); //eteint le raspberry du chariot
-		shutdownCam = new JMenuItem("Shutdown raspi caméra"); //eteint le raspberry de la caméra
-		shutdownAll = new JMenuItem("Shutdown all raspis"); //eteint tout les raspberries
+		shutdownCorps = new JMenuItem("Shutdown raspi corps"); //éteint le raspberry du corps
+		shutdownChar = new JMenuItem("Shutdown raspi chariot"); //éteint le raspberry du chariot
+		shutdownCam = new JMenuItem("Shutdown raspi caméra"); //éteint le raspberry de la caméra
+		shutdownAll = new JMenuItem("Shutdown all raspis"); //éteint tous les raspberries
 		restartCorps = new JMenuItem("Restart raspi corps"); //redémarre le raspberry du corps
 		restartChar = new JMenuItem("Restart raspi chariot"); //redémarre le raspberry du chariot
 		restartCam = new JMenuItem("Restart raspi caméra"); //redémarre le raspberry de la caméra
-		restartAll = new JMenuItem("Restart all raspis"); //redémarre tout les raspberries
+		restartAll = new JMenuItem("Restart all raspis"); //redémarre tous les raspberries
 
 		menu1.add(debug);
 		menu1.add(config);
