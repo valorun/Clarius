@@ -119,14 +119,14 @@ public class Application extends JFrame{
 
 		mainPanel.add(commandesPanel, BorderLayout.CENTER);
 	}
-	public JPanel centerPanel(){// panel avec la tete, la camera, le buste et la position du robot
+	public JPanel centerPanel(){// panel avec la tête, la caméra, le buste et la position du robot
 		JPanel centerPanel=new JPanel();
 		centerPanel.setLayout(new GridBagLayout());
 		GridBagConstraints gc = new GridBagConstraints();
 		gc.fill = GridBagConstraints.BOTH;//ordonne d'étirer les composants dans les deux sens quand ils le peuvent
 		gc.insets = new Insets(5, 5, 5, 5);//marge entre les composants
 		gc.ipady = gc.anchor = GridBagConstraints.CENTER;//si les composants n'occuppent pas tout l'espace, ils sont placés au milieu
-		gc.weightx = 1;//l'espace restant après la création des composants est répartie entre les composants 
+		gc.weightx = 1;//l'espace restant après la création des composants est réparti entre les composants 
 		gc.weighty = 1;//
 
 		//#####Commandes tête#####\\
@@ -249,7 +249,7 @@ public class Application extends JFrame{
 		miscPanel.setBorder(new TitledBorder(" Divers "));
 
 		//#####Ajout des parties au panel principal#####\\
-		gc.weightx = 1;//l'espace restant après la création des composants est répartie entre les composants 
+		gc.weightx = 1;//l'espace restant après la création des composants est réparti entre les composants 
 		gc.weighty = 1;//
 		gc.gridx = 0;
 		gc.gridy = 0;
