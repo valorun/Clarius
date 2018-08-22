@@ -12,11 +12,11 @@ function getPin {
 function getParity {
         echo "$1" | cut -d "-" -f 1
 }
-# Fonction permettant de récupérer le pin du relai pair au relai donné en aragument. Par exemple, si on donne un relai qui active un moteur tournant dans un sens, la fonction retourne le pin du relai faisant tourner le moteu dans l'autre sens.
+# Fonction permettant de récupérer le pin du relai pair au relai donné en argument. Par exemple, si on donne un relai qui active un moteur tournant dans un sens, la fonction retourne le pin du relai faisant tourner le moteu dans l'autre sens.
 function getPairPin {
-        #On récupère le pin du relai paire du relai donné en argument
+        #On récupère le pin du relai pair du relai donné en argument
         #Pour cela on récupère les deux pins avec la même parité dans le fichier de config. 
-        #Puis on récupère que les infos ne correspondant pas au relai donné en ragument.
+        #Puis on récupère que les infos ne correspondant pas au relai donné en argument.
         #Et enfin, on récupère seulement la partie affichant le pin du relai paire
         pairPin=$(grep -w "$(getParity $1)" config.txt | grep -vw "$1" | grep ".pin" | cut -d "=" -f 2)
         pairPinCount=$(echo -n $pairPin | grep -c '^')
@@ -27,7 +27,7 @@ function getPairPin {
             echo $pairPin
         fi
 }
-# Fonction permettant de savoir si le relai a le droit d'être activé. On verifie ici que le relai appairé n'est pas déja activé (afin d'éviter de faire fonctionner un moteur dans deux sens à la fois).
+# Fonction permettant de savoir si le relai à le droit d'être activé. On vérifie ici que le relai appairé n'est pas déja activé (afin d'éviter de faire fonctionner un moteur dans deux sens à la fois).
 function canBeEnabled {
         pairPin=$(getPairPin $1)
 		value=$2
