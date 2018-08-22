@@ -14,13 +14,13 @@ SPI_IODIRB      = 0x01
 SPI_GPIOA       = 0x12
 SPI_GPIOB       = 0x13
 
-SPI_SLAVE_WRITE = 0x00	#opcode de la carte en SPI pour l'envoie
-SPI_SLAVE_READ  = 0x01	#... et pour la reception
+SPI_SLAVE_WRITE = 0x00	#opcode de la carte en SPI pour l'envoi
+SPI_SLAVE_READ  = 0x01	#... et pour la réception 
 
-SCLK        = 11	#Serial Clock, Horloge (genere par le maitre)
-MOSI        = 10	#Master Output, Slave Input (genere par le maitre)
-MISO        = 9		#Master Input, Slave Output(genere par l'esclave)
-CS          = 8		#Slave Select, Actif a l'etat bas (genere par le maitre)
+SCLK        = 11	#Serial Clock, Horloge (générée par le maître)
+MOSI        = 10	#Master Output, Slave Input (générée par le maître)
+MISO        = 9		#Master Input, Slave Output(générée par l'esclave)
+CS          = 8		#Slave Select, Actif a l'etat bas (générée par le maître)
 
 Input = sys.argv[1]
 def ChangeBit(Input):
@@ -111,7 +111,7 @@ def main():
     sendSPI(0x40, 0x05, 0x00)
     sendSPI(0x42, 0x05, 0x00)
 
-    sendSPI(SPI_SLAVE_ADDR, SPI_IODIRB, 0x00) # GPPIOB comme entree
+    sendSPI(SPI_SLAVE_ADDR, SPI_IODIRB, 0x00) # GPPIOB comme entrée 
     sendSPI(SPI_SLAVE_ADDR, SPI_IODIRA, 0x00) # GPPIOA comme sortie
    # sendSPI(SPI_SLAVE_ADDR, SPI_GPIOA, 0x00) # Reset des GPIOA
    # sendSPI(SPI_SLAVE_ADDR, SPI_GPIOB, 0x00)  # Reset des GPIOB
